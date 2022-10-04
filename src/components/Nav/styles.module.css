@@ -1,0 +1,38 @@
+.nav{
+    width: 100%;
+    height: 10vh;
+}
+
+.navLight{
+    background-color: #4B89DC;
+}
+
+.navDark{
+    background-color: #000917;
+}
+
+.itemContainer{
+    height: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    text-decoration: none;
+}
+
+.linkDark, .linkDark:visited{
+    color: #000917;
+}
+
+.linkLight, .linkLight:visited{
+    color: #4B89DC;
+}
+
+.active{
+    color: coral;
+}
