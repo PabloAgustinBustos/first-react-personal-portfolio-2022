@@ -45,7 +45,7 @@ const Home = () => {
                 <motion.section className={s.right}>
                     <motion.div className={s.me}>
                         <motion.h1 className={s.name}>Pablo Bustos</motion.h1>
-                        <motion.span className={s.profesion}>desarrollador full-stack</motion.span>
+                        <motion.span className={s.profesion}>Desarrollador full-stack</motion.span>
                     </motion.div>
 
                     <motion.div className={s.descriptionContainer}>
