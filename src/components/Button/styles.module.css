@@ -1,0 +1,47 @@
+.button{
+    width: 180px;
+    height: 44px;
+    border-radius: 12px;
+
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 28px;
+}
+
+.bgDark{
+    background-color: #000917;
+    border: 4px solid #4B89DC;
+    color: #4B89DC;
+    transition: color .2s, background-color .2s;
+}
+
+.bgDark:hover{
+    color: #000917;
+    background-color: #4B89DC;
+    cursor: pointer;
+    transition: color .2s, background-color .2s, transform .2s;
+}
+
+.bgDark:active{
+    transform: scale(.9);
+    transition: transform .2s;
+}
+
+.bgLight{
+    cursor: pointer;
+    color: #000917;
+    border: 4px solid #000917;
+    background-color: #4B89DC;
+    transition: color .2s, background-color .2s;
+}
+
+.bgLight:hover{
+    background-color: #000917;
+    color: #4B89DC;
+    transition: color .2s, background-color .2s, transform .2s;
+}
+
+.bgLight:active{
+    transform: scale(.9);
+    transition: transform .2s;
+}

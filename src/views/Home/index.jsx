@@ -5,6 +5,7 @@ import profilePhoto from "../../assets/img/pp.jpg"
 import linkedinLogo from "../../assets/icons/linkedin.png"
 import githubLogo from "../../assets/icons/github.png"
 import { Link } from 'react-router-dom'
+import Button from '../../components/Button'
 
 const Home = () => {
     return (
@@ -53,7 +54,8 @@ const Home = () => {
                         <motion.p className={s.description}>Mi objetivo es crecer personal y profesionalmente afrontando nuevos desafios en mi vida.</motion.p>
                     </motion.div>
 
-                    <motion.button className={s.button}>Ver trayectoria</motion.button>
+                    {/* <motion.button className={s.button}>Ver trayectoria</motion.button> */}
+                    <Button text="Ver trayectoria" form="bgDark"/>
                 </motion.section>
             </motion.div>
         </motion.main>
