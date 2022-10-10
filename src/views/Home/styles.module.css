@@ -56,11 +56,13 @@
 }
 
 .statNumber{
-    font-weight: bold;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
 }
 
 .statConcept{
     font-weight: 100;
+    font-family: 'Inter', sans-serif;
 }
 
 .social{
@@ -69,18 +71,19 @@
 }
 
 .name{
-    font-weight: 700;
+    font-weight: 600;
     font-size: 96px;
     line-height: 116px;
 
     color: #6FA4EA;
+    font-family: 'Inter', sans-serif;
 }
 
 .profesion{    
-    font-weight: lighter;
+    font-weight: light;
     font-size: 28px;
-    line-height: 34px;
     color: #8A8A8A;
+    font-family: 'Inter', sans-serif;
 }
 
 .descriptionContainer{
@@ -89,6 +92,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: 'Inter', sans-serif;
 }
 
 .description{
@@ -99,27 +103,3 @@
     color: #FFFFFF;
 }
 
-.button{
-    width: 180px;
-    height: 44px;
-    background-color: #000917;
-    border: 4px solid #4B89DC;
-    border-radius: 12px;
-    color: #4B89DC;
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 28px;
-    transition: color .2s, background-color .2s;
-}
-
-.button:hover{
-    cursor: pointer;
-    color: #000917;
-    background-color: #4B89DC;
-    transition: color .2s, background-color .2s, transform .2s;
-}
-
-.button:active{
-    transform: scale(.9);
-    transition: transform .2s;
-}

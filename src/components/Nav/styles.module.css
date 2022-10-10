@@ -23,6 +23,7 @@
     font-size: 32px;
     line-height: 39px;
     text-decoration: none;
+    font-family: 'Inter', sans-serif;
 }
 
 .linkDark, .linkDark:visited{

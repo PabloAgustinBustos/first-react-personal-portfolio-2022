@@ -1,0 +1,18 @@
+.descriptionContainer{
+    width: 80%;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+}
+
+.p{
+    line-height: 30px;
+}
+
+.buttons{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

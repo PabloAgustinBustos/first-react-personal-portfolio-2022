@@ -26,6 +26,19 @@
     text-align: center;
 }
 
+.fast{
+    font-family: 'Electrolize', sans-serif;
+    color: #FABD22;
+    font-size: 35px;
+    position: absolute;
+    transform: rotate(-2.98deg);
+}
+
+.hide{
+    font-family: 'Electrolize', sans-serif;
+    visibility: hidden;
+    font-size: 35px;
+}
 
 .positContainer{
     display: flex;
@@ -33,27 +46,10 @@
 }
 
 .info{
+    width: 1200px;
+    /* background-color: blueviolet; */
     height: 250px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.descriptionContainer{
-    width: 78%;
-    font-weight: 500;
-    font-size: 20px;
-    color: white;
-    text-align: justify;
-}
-
-.p{
-    line-height: 30px;
-}
-
-.buttons{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
