@@ -21,9 +21,11 @@
 .text{
     margin: 0 80px;
     font-weight: 700;
-    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
     line-height: 48px;
     text-align: center;
+    /* background-color: rgba(255, 228, 196, 0.4); */
 }
 
 .fast{
