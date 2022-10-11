@@ -8,11 +8,17 @@ import Proyectos from './views/Proyectos'
 import Educacion from './views/Educacion'
 
 function App() {
+  let {pathname} = window.location
+  
+  if(pathname === "/"){
+    window.location.href = "/home";
+  }
+
   return (
     <div className="App">
       <BrowserRouter>
         <Nav/>
-        
+
         <Routes>
           <Route path='/home' element={<Home/>}/>
           <Route path='/skills' element={<Skills/>}/>
@@ -21,7 +27,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </div>
-  )
+  )  
 }
 
 export default App

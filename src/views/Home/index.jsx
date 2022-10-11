@@ -30,16 +30,17 @@ const Home = () => {
                             </motion.div>
                         </motion.section>
 
-                        <motion.section className={s.social}>
-                            <a href="https://www.linkedin.com/in/pablo-bustos-/">
-                                <motion.img className={s.icon} src={linkedinLogo}/>
-                            </a>
-
-                            <a href="https://github.com/PabloAgustinBustos">
-                                <motion.img className={s.icon} src={githubLogo}/>
-                            </a>
-                        </motion.section>
                     </motion.div>
+                    
+                    <motion.section className={s.social}>
+                        <a href="https://www.linkedin.com/in/pablo-bustos-/">
+                            <motion.img className={s.icon} src={linkedinLogo}/>
+                        </a>
+
+                        <a href="https://github.com/PabloAgustinBustos">
+                            <motion.img className={s.icon} src={githubLogo}/>
+                        </a>
+                    </motion.section>
                 </motion.section>
 
                 <motion.section className={s.right}>

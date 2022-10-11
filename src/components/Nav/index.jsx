@@ -34,16 +34,21 @@ const Nav = () => {
         }
     }
 
-    return (
-        <motion.nav className={`${s.nav} ${s[color.nav]}`}>
-            <motion.div className={s.itemContainer}>
-                <NavLink className={`${s.link} ${s[color.link]}`} style={handleTextDecoration} to="/home">Home</NavLink>
-                <NavLink className={`${s.link} ${s[color.link]}`} style={handleTextDecoration} to="/skills">Skills</NavLink>
-                <NavLink className={`${s.link} ${s[color.link]}`} style={handleTextDecoration} to="/proyectos">Proyectos</NavLink>
-                <NavLink className={`${s.link} ${s[color.link]}`} style={handleTextDecoration} to="/educacion">Educación</NavLink>
-            </motion.div>
-        </motion.nav>
-    )
+    if(pathname !== "/"){
+        return (
+            <motion.nav className={`${s.nav} ${s[color.nav]}`}>
+                <motion.div className={s.itemContainer}>
+                    <NavLink className={`${s.link} ${s[color.link]}`} style={handleTextDecoration} to="/home">Home</NavLink>
+                    <NavLink className={`${s.link} ${s[color.link]}`} style={handleTextDecoration} to="/skills">Skills</NavLink>
+                    <NavLink className={`${s.link} ${s[color.link]}`} style={handleTextDecoration} to="/proyectos">Proyectos</NavLink>
+                    <NavLink className={`${s.link} ${s[color.link]}`} style={handleTextDecoration} to="/educacion">Educación</NavLink>
+                </motion.div>
+            </motion.nav>
+        )
+    }else{
+        return null
+    }
+
 }
 
 export default Nav
