@@ -6,6 +6,8 @@ import linkedinLogo from "../../assets/icons/linkedin.png"
 import githubLogo from "../../assets/icons/github.png"
 import { Link } from 'react-router-dom'
 import Button from '../../components/Button'
+import {stats} from "../../utils"
+import Skills from '../Skills'
 
 const Home = () => {
     return (
@@ -17,15 +19,15 @@ const Home = () => {
                     <motion.div className={s.marco}>
                         <motion.section className={s.stats}>
                             <motion.div className={s.stat}>
-                                <span className={s.statNumber}>19</span>
+                                <span className={s.statNumber}>{stats.skills}</span>
                                 <span className={s.statConcept}>skills</span>
                             </motion.div>
                             <motion.div className={s.stat}>
-                                <span className={s.statNumber}>4</span>
+                                <span className={s.statNumber}>{stats.projects}</span>
                                 <span className={s.statConcept}>proyectos</span>
                             </motion.div>
                             <motion.div className={s.stat}>
-                                <span className={s.statNumber}>7</span>
+                                <span className={s.statNumber}>{stats.courses}</span>
                                 <span className={s.statConcept}>cursos</span>
                             </motion.div>
                         </motion.section>

@@ -1,5 +1,58 @@
 .container{
-    height: 90vh;
+    height: 92vh;
     background-color: #000917;
     color: #4B89DC;
+
+    display: grid;
+    grid-template-rows: 1.5fr 10fr;
+}
+
+.title{
+    width: 100%;
+
+    /* background-color: rgba(208, 255, 0, 0.3); */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto{
+    color: rgb(229, 229, 229);
+    font-size: 35px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+
+.fast{
+    font-family: 'Electrolize', sans-serif;
+    color: #FABD22;
+    font-size: 35px;
+    position: absolute;
+    transform: rotate(-2.98deg);
+}
+
+.hide{
+    font-family: 'Electrolize', sans-serif;
+    visibility: hidden;
+    font-size: 35px;
+}
+
+.projects{
+    margin: 0 auto;
+    width: 90%;
+    /* background-color: rgba(0, 255, 255, 0.3); */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.cards{
+    /* background-color: brown; */
+    display: grid;
+    column-gap: 60px;
+    row-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }

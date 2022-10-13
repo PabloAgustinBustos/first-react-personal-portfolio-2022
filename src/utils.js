@@ -5,10 +5,13 @@ import reactSrc from "./assets/icons/frontSkills/react.png"
 import materialSrc from "./assets/icons/frontSkills/materialUI.png"
 import nextJSSrc from "./assets/icons/frontSkills/NextJS.png"
 
+import reactRouterDomSrc from "./assets/icons/frontSkills/reactRouterDom.png"
+
 import nodeSrc from "./assets/icons/backSkills/node.png"
 import expressSrc from "./assets/icons/backSkills/express.png"
 import postgressSrc from "./assets/icons/backSkills/postgress.png"
 import sequelizeSrc from "./assets/icons/backSkills/sequelize.png"
+import mongoSrc from "./assets/icons/backSkills/mongoDB.png"
 
 import gitSrc from "./assets/icons/agileSkills/git.png"
 import devopsSrc from "./assets/icons/agileSkills/devops.png"
@@ -19,9 +22,27 @@ import frontSrc from "./assets/img/positFront.png"
 import backSrc from "./assets/img/positBack.png"
 import agileSrc from "./assets/img/positAgil.png"
 
+import pokePI1 from "./assets/img/pokedex/1.png"
+import pokePI2 from "./assets/img/pokedex/2.png"
+import pokePI3 from "./assets/img/pokedex/3.png"
+import pokePI4 from "./assets/img/pokedex/4.png"
+
+import climApp1 from "./assets/img/climapp/1.jpg"
+import climApp2 from "./assets/img/climapp/2.jpg"
+
+import techCommerce1 from "./assets/img/techCommerce/1.jpg"
+import techCommerce2 from "./assets/img/techCommerce/2.jpg"
+import techCommerce3 from "./assets/img/techCommerce/3.jpg"
+import techCommerce4 from "./assets/img/techCommerce/4.jpg"
+import techCommerce5 from "./assets/img/techCommerce/5.jpg"
+
+import myToDo1 from "./assets/img/myToDo/1.jpg"
+import myToDo2 from "./assets/img/myToDo/2.jpg"
+import myToDo3 from "./assets/img/myToDo/3.jpg"
+
 const techIcons = {
     front: [htmlSrc, cssSrc, tsSrc, reactSrc, materialSrc, nextJSSrc],
-    back: [nodeSrc, expressSrc, postgressSrc, sequelizeSrc],
+    back: [nodeSrc, expressSrc, postgressSrc, sequelizeSrc, mongoSrc],
     agile: [gitSrc, devopsSrc, scrumSrc, mvcSrc]
 }
 
@@ -78,4 +99,213 @@ const softSkills = [
     }
 ]
 
-export {techIcons, positOf, softSkills}
+const projects = [
+    {
+        id: 1,
+        name: "PokePI",
+        thumbnail: pokePI1,
+        images: [pokePI1, pokePI2, pokePI3, pokePI4],
+
+        techStack: {
+            cardList: [
+                reactSrc,
+                expressSrc,
+                postgressSrc,
+                sequelizeSrc
+            ],
+
+            fullList: [
+                reactSrc,
+                cssSrc,
+                nodeSrc,
+                expressSrc,
+                postgressSrc,
+                sequelizeSrc,
+                gitSrc
+            ]
+        },
+
+        description: [
+            {
+                title: "Descripción del proyecto",
+                content: ["hola"]
+            },
+            {
+                title: "¿Cómo fue el proceso?",
+                content: ["hola"]
+            },
+            {
+                title: "¿Qué aprendí?",
+                content: ["hola"]
+            },
+        ]
+    },
+
+    {
+        id: 2,
+        name: "ClimApp",
+        thumbnail: climApp1,
+        images: [climApp1, climApp2],
+
+        techStack: {
+            cardList: [
+                reactSrc,
+                reactRouterDomSrc
+                // expressSrc,
+                // postgressSrc,
+                // sequelizeSrc
+            ],
+
+            fullList: [
+                reactSrc,
+                cssSrc,
+                nodeSrc,
+                expressSrc,
+                postgressSrc,
+                sequelizeSrc,
+                gitSrc
+            ]
+        },
+
+        description: [
+            {
+                title: "Descripción del proyecto",
+                content: ["hola"]
+            },
+            {
+                title: "¿Cómo fue el proceso?",
+                content: ["hola"]
+            },
+            {
+                title: "¿Qué aprendí?",
+                content: ["hola"]
+            },
+        ]
+    },
+
+    {
+        id: 3,
+        name: "TechCommerce",
+        thumbnail: techCommerce1,
+        images: [
+            techCommerce1,
+            techCommerce2,
+            techCommerce3,
+            techCommerce4,
+            techCommerce5
+        ],
+
+        techStack: {
+            cardList: [
+                reactSrc,
+                expressSrc,
+                postgressSrc,
+                sequelizeSrc
+            ],
+
+            fullList: [
+                reactSrc,
+                cssSrc,
+                nodeSrc,
+                expressSrc,
+                postgressSrc,
+                sequelizeSrc,
+                gitSrc
+            ]
+        },
+
+        description: [
+            {
+                title: "Descripción del proyecto",
+                content: ["hola"]
+            },
+            {
+                title: "¿Cómo fue el proceso?",
+                content: ["hola"]
+            },
+            {
+                title: "¿Qué aprendí?",
+                content: ["hola"]
+            },
+        ]
+    },
+
+    {
+        id: 4,
+        name: "MyToDo",
+        thumbnail: myToDo1,
+        images: [myToDo1, myToDo2, myToDo3],
+
+        techStack: {
+            cardList: [
+                reactSrc,
+                expressSrc,
+                mongoSrc
+            ],
+
+            fullList: [
+                reactSrc,
+                cssSrc,
+                nodeSrc,
+                expressSrc,
+                mongoSrc,
+                gitSrc
+            ]
+        },
+
+        description: [
+            {
+                title: "Descripción del proyecto",
+                content: ["hola"]
+            },
+            {
+                title: "¿Cómo fue el proceso?",
+                content: ["hola"]
+            },
+            {
+                title: "¿Qué aprendí?",
+                content: ["hola"]
+            },
+        ]
+    }
+]
+
+const courses = [
+    {
+        title: "CIENCIAS DE LA COMPUTACIÓN",
+        institution: "UBA",
+        progress: "En curso"
+    },
+
+    {
+        title: "DESARROLLO WEB FULL-STACK",
+        institution: "SoyHenry",
+        progress: "ENE/2022"
+    },
+
+    {
+        title: "TÉCNICO EN COMPUTACIÓN",
+        institution: "Escuela Técnica N°32 D.E. 14",
+        progress: "DIC/2019"
+    },
+    {
+        title: "DESARROLLO WEB FRONT-END",
+        institution: "Curso: 'aprender programando': GBA",
+        progress: "DIC/2018"
+    },
+    {
+        title: "PROGRAMACIÓN",
+        institution: "Autodidacta",
+        progress: "En curso desde el año 2016"
+    },
+]
+
+const stats = {
+    techSkills: techIcons.front.length + techIcons.back.length + techIcons.agile.length,
+    softSkills: softSkills.length,
+    skills: techIcons.front.length + techIcons.back.length + techIcons.agile.length + softSkills.length,
+    projects: projects.length,
+    courses: courses.length
+}
+
+export {techIcons, positOf, softSkills, projects, stats, courses}

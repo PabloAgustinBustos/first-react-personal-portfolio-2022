@@ -1,5 +1,83 @@
 .container{
-    height: 90vh;
+    height: 92vh;
     background-color: #4B89DC;
     color: #000917;
+    
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+
+.titleContainer{
+    width: 100%;
+    
+    /* background-color: chocolate; */
+    
+    font-size: 40px;
+
+    font-weight: 600;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.certificatesContainer{
+    width: 100%;
+    /* background-color: crimson; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.totalCertificates{
+    width: 226px;
+    height: 226px;
+
+    border: 6px solid black;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Inter', sans-serif;
+}
+
+.number{
+    font-size: 96px;
+}
+
+.concept{
+    font-size: 48px;
+    font-weight: 200;
+    font-family: 'Inter', sans-serif;
+}
+
+.list{
+    height: 400px;
+    /* background-color: #4B89DC; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item{
+    font-size: 27px;
+}
+
+.certificate{
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+}
+
+.institution{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.progress{
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
 }

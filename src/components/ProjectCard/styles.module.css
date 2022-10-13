@@ -1,0 +1,115 @@
+.card{
+    width: 255px;
+    height: 222px;
+    background-color: aliceblue;
+
+    border-radius: 16px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.img{
+    width: 100%;
+    height: 164px;
+    
+    /* background-color: rgba(0, 255, 255, .4); */
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    
+    
+    position: relative;
+    z-index: 100;
+    filter: blur(1px);
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+}
+
+.infoRow{
+    width: 100%;
+    height: 64px;
+
+    background-color: rgb(255, 255, 255);
+
+    position: absolute;
+    bottom: 0;
+
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    box-shadow: 0px -8px 10px 1px rgba(0, 0, 0, 0.5);
+    
+    z-index: 200;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infoColumn{
+    width: 100%;
+    height: 64px;
+
+    background-color: rgb(255, 255, 255);
+
+    position: absolute;
+    bottom: 0;
+
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    box-shadow: 0px -8px 10px 1px rgba(0, 0, 0, 0.5);
+    
+    z-index: 200;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.left{
+    margin-left: 10px;
+    /* background-color: rgba(0, 255, 255, .4); */
+    position: absolute;
+}
+
+.right{
+    width: 140px;
+    /* background-color: rgba(21, 0, 255, 0.4); */
+    position: absolute;
+    /* top:0; */
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.up{
+    /* background-color: rgba(0, 255, 255, .4); */
+    text-align: center;
+}
+
+.down{
+    /* background-color: rgba(21, 0, 255, 0.4); */
+    display: flex;
+    justify-content: center;
+}
+
+.name{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: black;
+}
+
+.tech{
+    width: 35px;
+    /* height: 22px; */
+}
