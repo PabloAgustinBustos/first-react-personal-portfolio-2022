@@ -103,10 +103,13 @@
 }
 
 .profesion{    
-    font-weight: light;
+    font-weight: 200;
     font-size: 28px;
     color: #8A8A8A;
     font-family: 'Inter', sans-serif;
+    /* display:inline-block; */
+    /* background-color: rebeccapurple; */
+    
 }
 
 .descriptionContainer{

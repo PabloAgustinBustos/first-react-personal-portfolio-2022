@@ -11,57 +11,198 @@ import Skills from '../Skills'
 
 const Home = () => {
     return (
-        <motion.main className={s.containerFlex}>
-            <motion.div className={s.container}>
-                <motion.section className={s.left}>
-                    <motion.img className={s.image} src={profilePhoto}/>
+        <main className={s.containerFlex}>
+            <div className={s.container}>
+                <motion.section 
+                    className={s.left}
+                    
+                    // initial={{
+                    //     x: "-100vh"
+                    // }}
+                    
+                    // animate={{
+                    //     x: "0px"
+                    // }}
 
-                    <motion.div className={s.marco}>
-                        <motion.section className={s.stats}>
-                            <motion.div className={s.stat}>
+                    
+                >
+                    <motion.img 
+                        className={s.image} 
+                        src={profilePhoto}
+                        initial={{
+                            y: "-80vh"
+                        }}
+                    
+                        animate={{
+                            y: 0
+                        }}
+
+                        transition={{
+                            duration: 1.2,
+                            type:"spring"
+                        }}
+                    />
+
+                    <motion.div 
+                        className={s.marco}
+                        
+                        initial={{
+                            x: "-80vw"
+                        }}
+                    
+                        animate={{
+                            x: 0
+                        }}
+
+                        transition={{
+                            duration: 1.2,
+                            delay: 0.8,
+                            type:"spring"
+                        }}
+                    >
+                        <motion.section 
+                            className={s.stats}
+
+                            initial={{
+                                
+                            }}
+                        
+                            animate={{
+                                width: ["100%", "60%", "100%"]
+                            }}
+    
+                            transition={{
+                                duration: 1.2,
+                                delay: .8,
+                                type:"spring"
+                            }}
+                        >
+                            <div className={s.stat}>
                                 <span className={s.statNumber}>{stats.skills}</span>
                                 <span className={s.statConcept}>skills</span>
-                            </motion.div>
-                            <motion.div className={s.stat}>
+                            </div>
+                            <div className={s.stat}>
                                 <span className={s.statNumber}>{stats.projects}</span>
                                 <span className={s.statConcept}>proyectos</span>
-                            </motion.div>
-                            <motion.div className={s.stat}>
+                            </div>
+                            <div className={s.stat}>
                                 <span className={s.statNumber}>{stats.courses}</span>
                                 <span className={s.statConcept}>cursos</span>
-                            </motion.div>
+                            </div>
                         </motion.section>
 
                     </motion.div>
                     
-                    <motion.section className={s.social}>
-                        <a href="https://www.linkedin.com/in/pablo-bustos-/">
-                            <motion.img className={s.icon} src={linkedinLogo}/>
-                        </a>
+                    <section className={s.social}>
+                        <motion.a 
+                            href="https://www.linkedin.com/in/pablo-bustos-/"
+                            
+                            initial={{
+                                y: "50vh"
+                            }}
+                        
+                            animate={{
+                                y: 0
+                            }}
 
-                        <a href="https://github.com/PabloAgustinBustos">
-                            <motion.img className={s.icon} src={githubLogo}/>
-                        </a>
-                    </motion.section>
+                            transition={{
+                                duration: 1.2,
+                                delay: 0.8,
+                                type:"spring"
+                            }}
+                        >
+                                
+                            <img className={s.icon} src={linkedinLogo}/>
+                        </motion.a>
+
+                        <motion.a 
+                            href="https://github.com/PabloAgustinBustos"
+                            
+                            initial={{
+                                y: "50vh"
+                            }}
+                        
+                            animate={{
+                                y: 0
+                            }}
+
+                            transition={{
+                                duration: 1.2,
+                                delay: 1.2,
+                                type:"spring"
+                            }}
+                        >
+                            <img className={s.icon} src={githubLogo}/>
+                        </motion.a>
+                    </section>
                 </motion.section>
 
-                <motion.section className={s.right}>
-                    <motion.div className={s.me}>
-                        <motion.h1 className={s.name}>Pablo Bustos</motion.h1>
-                        <motion.span className={s.profesion}>Desarrollador full-stack</motion.span>
+                <section className={s.right}>
+                    <div className={s.me}>
+                        <motion.h1 
+                            className={s.name}
+
+                            initial={{
+                                y: "-50vh"
+                            }}
+                        
+                            animate={{
+                                y: 0
+                            }}
+
+                            transition={{
+                                duration: 1.2,
+                                delay: .2,
+                                type:"spring"
+                            }}
+                        >Pablo Bustos</motion.h1>
+
+                        <motion.div
+                            className={s.profesion}
+
+                            initial={{
+                                x: "55vw"
+                            }}
+                        
+                            animate={{
+                                x:0
+                            }}
+
+                            transition={{
+                                duration: 1.2,
+                                delay: .5,
+                                type:"spring"
+                            }}
+                        >Desarrollador full-stack</motion.div>
+                    </div>
+
+                    <motion.div 
+                        className={s.descriptionContainer}
+                        
+                        initial={{
+                            y: "55vh"
+                        }}
+                    
+                        animate={{
+                            y:0
+                        }}
+
+                        transition={{
+                            duration: 1.2,
+                            delay: .5,
+                            type:"spring"
+                        }}
+                    >
+                        <p className={s.description}>Soy programador muy apasionado por la tecnología.</p>
+                        <p className={s.description}>Me considero autodidacta y versatil. Me gusta adquirir nuevas herramientas a medida que voy trabajando y ganando experiencia, ya sea solo o en conjunto con un equipo.</p>
+                        <p className={s.description}>Mi objetivo es crecer personal y profesionalmente afrontando nuevos desafios en mi vida.</p>
                     </motion.div>
 
-                    <motion.div className={s.descriptionContainer}>
-                        <motion.p className={s.description}>Soy programador muy apasionado por la tecnología.</motion.p>
-                        <motion.p className={s.description}>Me considero autodidacta y versatil. Me gusta adquirir nuevas herramientas a medida que voy trabajando y ganando experiencia, ya sea solo o en conjunto con un equipo.</motion.p>
-                        <motion.p className={s.description}>Mi objetivo es crecer personal y profesionalmente afrontando nuevos desafios en mi vida.</motion.p>
-                    </motion.div>
-
-                    {/* <motion.button className={s.button}>Ver trayectoria</motion.button> */}
+                    {/* <button className={s.button}>Ver trayectoria</button> */}
                     <Button text="Ver trayectoria" form="bgDark"/>
-                </motion.section>
-            </motion.div>
-        </motion.main>
+                </section>
+            </div>
+        </main>
     )
 }
 

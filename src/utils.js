@@ -3,7 +3,8 @@ import cssSrc from "./assets/icons/frontSkills/css.png"
 import tsSrc from "./assets/icons/frontSkills/ts.png"
 import reactSrc from "./assets/icons/frontSkills/react.png"
 import materialSrc from "./assets/icons/frontSkills/materialUI.png"
-import nextJSSrc from "./assets/icons/frontSkills/NextJS.png"
+import bootstrapSrc from "./assets/icons/frontSkills/bootstrap.png"
+import jsSrc from "./assets/icons/frontSkills/js.png"
 
 import reactRouterDomSrc from "./assets/icons/frontSkills/reactRouterDom.png"
 
@@ -40,8 +41,12 @@ import myToDo1 from "./assets/img/myToDo/1.jpg"
 import myToDo2 from "./assets/img/myToDo/2.jpg"
 import myToDo3 from "./assets/img/myToDo/3.jpg"
 
+import vanilla1 from "./assets/img/vanillaTasks/1.jpg"
+import vanilla2 from "./assets/img/vanillaTasks/2.jpg"
+import vanilla3 from "./assets/img/vanillaTasks/3.jpg"
+
 const techIcons = {
-    front: [htmlSrc, cssSrc, tsSrc, reactSrc, materialSrc, nextJSSrc],
+    front: [htmlSrc, cssSrc, tsSrc, reactSrc, materialSrc, bootstrapSrc],
     back: [nodeSrc, expressSrc, postgressSrc, sequelizeSrc, mongoSrc],
     agile: [gitSrc, devopsSrc, scrumSrc, mvcSrc]
 }
@@ -267,7 +272,46 @@ const projects = [
                 content: ["hola"]
             },
         ]
-    }
+    },
+
+    {
+        id: 5,
+        name: "VanillaTasks",
+        thumbnail: vanilla2,
+        images: [vanilla2, vanilla1, vanilla3],
+
+        techStack: {
+            cardList: [
+                htmlSrc,
+                bootstrapSrc,
+                jsSrc
+            ],
+
+            fullList: [
+                reactSrc,
+                cssSrc,
+                nodeSrc,
+                expressSrc,
+                mongoSrc,
+                gitSrc
+            ]
+        },
+
+        description: [
+            {
+                title: "Descripción del proyecto",
+                content: ["hola"]
+            },
+            {
+                title: "¿Cómo fue el proceso?",
+                content: ["hola"]
+            },
+            {
+                title: "¿Qué aprendí?",
+                content: ["hola"]
+            },
+        ]
+    },
 ]
 
 const courses = [

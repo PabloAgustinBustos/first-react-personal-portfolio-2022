@@ -13,6 +13,10 @@ const Nav = () => {
     })
 
     useEffect(() => {
+        console.log("testing")
+    }, [])
+
+    useEffect(() => {
         if(pathname === "/home" || pathname === "/proyectos"){
             setColor({
                 nav: "navLight",
