@@ -6,6 +6,7 @@ import Home from './views/Home'
 import Skills from './views/Skills'
 import Proyectos from './views/Proyectos'
 import Educacion from './views/Educacion'
+import GlobalStates from './components/GlobalStates'
 
 function App() {
   let {pathname} = window.location
@@ -17,14 +18,16 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Nav/>
+        <GlobalStates>
+          <Nav/>
 
-        <Routes>
-          <Route path='/home' element={<Home/>}/>
-          <Route path='/skills' element={<Skills/>}/>
-          <Route path='/proyectos' element={<Proyectos/>}/>
-          <Route path='/educacion' element={<Educacion/>}/>
-        </Routes>
+          <Routes>
+            <Route path='/home' element={<Home/>}/>
+            <Route path='/skills' element={<Skills/>}/>
+            <Route path='/proyectos' element={<Proyectos/>}/>
+            <Route path='/educacion' element={<Educacion/>}/>
+          </Routes>
+        </GlobalStates>
       </BrowserRouter>
     </div>
   )  

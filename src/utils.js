@@ -5,7 +5,7 @@ import reactSrc from "./assets/icons/frontSkills/react.png"
 import materialSrc from "./assets/icons/frontSkills/materialUI.png"
 import bootstrapSrc from "./assets/icons/frontSkills/bootstrap.png"
 import jsSrc from "./assets/icons/frontSkills/js.png"
-
+import nextSrc from "./assets/icons/frontSkills/NextJS.png"
 import reactRouterDomSrc from "./assets/icons/frontSkills/reactRouterDom.png"
 
 import nodeSrc from "./assets/icons/backSkills/node.png"
@@ -46,7 +46,7 @@ import vanilla2 from "./assets/img/vanillaTasks/2.jpg"
 import vanilla3 from "./assets/img/vanillaTasks/3.jpg"
 
 const techIcons = {
-    front: [htmlSrc, cssSrc, tsSrc, reactSrc, materialSrc, bootstrapSrc],
+    front: [htmlSrc, cssSrc, tsSrc, reactSrc, materialSrc, nextSrc],
     back: [nodeSrc, expressSrc, postgressSrc, sequelizeSrc, mongoSrc],
     agile: [gitSrc, devopsSrc, scrumSrc, mvcSrc]
 }

@@ -1,29 +1,34 @@
 import React from 'react'
 import {motion} from "framer-motion"
 import s from "./styles.module.css"
+import { useEffect } from 'react'
 
-const Button = ({id, text, form, onClick}) => (<>
-    <motion.div
-        initial={{
-            x: "55vw"
-        }}
+const Button = ({id, controls, variants, text, form, onClick}) => {
+    let animationProps={}
     
-        animate={{
-            x:0
-        }}
+    
+    if(variants){
+        animationProps = {
+            variants,
+            initial:"hidden",
+            animate: controls,
+            transition: variants.transition
+        }
+    }
+    
+    useEffect(() => {
+        if(controls) controls.start("visible")
+    }, [])
 
-        transition={{
-            duration: 1,
-            delay: .8,
-            type:"spring"
-        }}
-    >
-        <button id={id} className={`${s.button} ${s[form]}`} onClick={onClick}>
-            {form === "selected" ? <div className={s.loader}></div> : null}
-        
-            {text}
-        </button>
-    </motion.div>
-</>)
+    return <>
+        <motion.div {...animationProps}>
+            <button id={id} className={`${s.button} ${s[form]}`} onClick={onClick}>
+                {form === "selected" ? <div className={s.loader}></div> : null}
+            
+                {text}
+            </button>
+        </motion.div>
+    </>
+}
 
 export default Button
