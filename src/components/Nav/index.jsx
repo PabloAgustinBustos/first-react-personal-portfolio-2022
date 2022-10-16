@@ -48,16 +48,16 @@ const Nav = () => {
         e.preventDefault()
         let page = e.target.id
         
+        if("/"+page === pathname) return
+        
         controls.start("change")
 
         if(page === "skills" || page === "educacion"){
             controls.start("bgToLight")
             controls.start("navToDark")
-            // controls.start("colorToLight")
         }else{
             controls.start("bgToDark")
             controls.start("navToLight")
-            // controls.start("colorToDark")
         }
 
         e.target.style="text-decoration: underline"

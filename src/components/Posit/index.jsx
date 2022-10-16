@@ -5,8 +5,8 @@ import {techIcons, positOf} from "../../utils"
 
 const Posit = ({tech}) => {
     return (
-        <motion.div className={s.positContainer}>
-            <img style={{position:"absolute"}} src={positOf[tech]}/>
+        <div className={s.positContainer}>
+            <img className={s.posit} src={positOf[tech]}/>
 
             <div className={s.positInfo}>
                 <section className={s.skillTitle}>
@@ -17,7 +17,7 @@ const Posit = ({tech}) => {
                     {techIcons[tech].map(src => <img className={s.icon} key={src} src={src}/>)}
                 </section>
             </div>
-        </motion.div>
+        </div>
     )
 }
 
