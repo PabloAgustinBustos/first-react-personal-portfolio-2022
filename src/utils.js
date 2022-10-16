@@ -316,28 +316,33 @@ const projects = [
 
 const courses = [
     {
+        id: 1,
         title: "CIENCIAS DE LA COMPUTACIÓN",
         institution: "UBA",
         progress: "En curso"
     },
 
     {
+        id: 2,
         title: "DESARROLLO WEB FULL-STACK",
         institution: "SoyHenry",
         progress: "ENE/2022"
     },
 
     {
+        id: 3,
         title: "TÉCNICO EN COMPUTACIÓN",
         institution: "Escuela Técnica N°32 D.E. 14",
         progress: "DIC/2019"
     },
     {
+        id: 4,
         title: "DESARROLLO WEB FRONT-END",
         institution: "Curso: 'aprender programando': GBA",
         progress: "DIC/2018"
     },
     {
+        id: 5,
         title: "PROGRAMACIÓN",
         institution: "Autodidacta",
         progress: "En curso desde el año 2016"

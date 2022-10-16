@@ -1,13 +1,29 @@
 import React from 'react'
 import {motion} from "framer-motion"
 import s from "./styles.module.css"
+import { projectVariants } from '../../views/Proyectos/animations'
 
-const ProjectCard = ({id, name, tech, thumbnail}) => {
+const ProjectCard = ({id, controls, name, tech, thumbnail}) => {
     return (
         <motion.div 
+            variants={projectVariants}
+
+            initial={{
+                opacity: 0,
+                scale: .5
+            }}
+
+            animate={controls}
+
+            custom={id}
+
             whileHover={{
                 cursor: "pointer",
                 scale: 1.05
+            }}
+
+            onHoverEnd = {() => {
+                controls.start("normal")
             }}
 
             className={s.card}

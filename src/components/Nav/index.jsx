@@ -47,15 +47,18 @@ const Nav = () => {
     const handleClick = (e) => {
         e.preventDefault()
         let page = e.target.id
+        let duration = 0
         
         if("/"+page === pathname) return
-        
+
         controls.start("change")
 
         if(page === "skills" || page === "educacion"){
             controls.start("bgToLight")
             controls.start("navToDark")
+            duration = 200
         }else{
+            duration = 500
             controls.start("bgToDark")
             controls.start("navToLight")
         }
@@ -67,7 +70,11 @@ const Nav = () => {
             navigate(route)
 
             e.target.style="text-decoration: none"
-        }, 200)
+        }, 300)
+        
+        // 200 para /home
+        // 300 para /proyectos
+        // 600 para /educacion
     }
 
     if(pathname !== "/"){

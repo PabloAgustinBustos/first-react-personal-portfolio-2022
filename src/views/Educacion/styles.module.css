@@ -7,11 +7,7 @@
     grid-template-rows: 1fr 4fr;
 }
 
-.titleContainer{
-    width: 100%;
-    
-    /* background-color: chocolate; */
-    
+.titleContainer{    
     font-size: 40px;
 
     font-weight: 600;
@@ -22,7 +18,7 @@
 }
 
 .certificatesContainer{
-    width: 100%;
+    /* width: 100%; */
     /* background-color: crimson; */
 
     display: flex;
@@ -30,19 +26,33 @@
     justify-content: space-evenly;
 }
 
-.totalCertificates{
-    width: 226px;
-    height: 226px;
-
-    border: 6px solid black;
-    border-radius: 50%;
+.content{
+    width: 220px;
+    height: 220px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
+    background-color: #4B89DC;
+    /* transform: scale(.98); */
+    border-radius: 50%;
+}
+
+.totalCertificates{
+    /* background: conic-gradient(
+        #000917 180deg,
+        #4B89DC 270deg
+    ); */
+    width: 226px;
+    height: 226px;
+    /* border: 6px solid black; */
+    border-radius: 50%;
     font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .number{

@@ -14,10 +14,10 @@ const sectionVariants = {
     },
 
     change: (custom) => {
-        let finalY = custom === "top" ? "-100vh" : "100vh"
+        let finalX = custom === "top" ? "200vh" : "-200vh"
 
         return {
-            y: finalY
+            x: finalX
         }
     },
 }
