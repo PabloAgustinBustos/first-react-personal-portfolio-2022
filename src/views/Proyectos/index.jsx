@@ -16,6 +16,10 @@ const Proyectos = () => {
         controls.start("visible")
     }, [])
 
+    function handleClick(e) {
+        console.log(e.target.id)
+    }
+
     return (
         <motion.main variants={backgroundVariants} custom={"toLight"} animate={controls} className={s.container}>
             <motion.section variants={titleVariants} initial="hidden" animate={controls} className={s.title}>
@@ -26,6 +30,7 @@ const Proyectos = () => {
                 <div className={s.cards}>
                     {projects.map(p => (
                         <ProjectCard 
+                            onClick={handleClick}
                             key={p.id}
                             id={p.id}
                             controls={controls}

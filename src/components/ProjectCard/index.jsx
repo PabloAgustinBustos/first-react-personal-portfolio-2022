@@ -3,7 +3,7 @@ import {motion} from "framer-motion"
 import s from "./styles.module.css"
 import { projectVariants } from '../../views/Proyectos/animations'
 
-const ProjectCard = ({id, controls, name, tech, thumbnail}) => {
+const ProjectCard = ({id, onClick, controls, name, tech, thumbnail}) => {
     return (
         <motion.div 
             variants={projectVariants}
@@ -27,7 +27,10 @@ const ProjectCard = ({id, controls, name, tech, thumbnail}) => {
             }}
 
             className={s.card}
+
+            
         >
+            <div className={s.trigger} onClick={onClick} id={id}></div>
             <section className={s.img}>
                 <img src={thumbnail}/>
             </section>

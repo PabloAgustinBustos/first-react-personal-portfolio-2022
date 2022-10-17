@@ -7,6 +7,7 @@ import bootstrapSrc from "./assets/icons/frontSkills/bootstrap.png"
 import jsSrc from "./assets/icons/frontSkills/js.png"
 import nextSrc from "./assets/icons/frontSkills/NextJS.png"
 import reactRouterDomSrc from "./assets/icons/frontSkills/reactRouterDom.png"
+import motionSrc from "./assets/icons/frontSkills/motion.png"
 
 import nodeSrc from "./assets/icons/backSkills/node.png"
 import expressSrc from "./assets/icons/backSkills/express.png"
@@ -44,6 +45,7 @@ import myToDo3 from "./assets/img/myToDo/3.jpg"
 import vanilla1 from "./assets/img/vanillaTasks/1.jpg"
 import vanilla2 from "./assets/img/vanillaTasks/2.jpg"
 import vanilla3 from "./assets/img/vanillaTasks/3.jpg"
+import portfolio1 from "./assets/img/portfolio/1.jpg"
 
 const techIcons = {
     front: [htmlSrc, cssSrc, tsSrc, reactSrc, materialSrc, nextSrc],
@@ -73,6 +75,7 @@ const softSkills = [
             "No me gusta quedarme estancado en un solo lugar, siempre me atrajeron los desafíos y las cosas nuevas. Todo lo que me permita practicar y aprender cosas nuevas es muy bienvenido en mi vida. Por eso aspiro a expandirme a otras ramas y descubrir nuevas metodologías"
         ]
     },
+
     {
         skill: "Curioso",
         description: [
@@ -80,6 +83,7 @@ const softSkills = [
             "Mi curiosidad no se limita solo a la informática, también me interesan muchas otras áreas como el diseño, la edición de video, las historias, los trabajos de otras personas, etc."
         ]
     },
+
     {
         skill: "Trabajo en equipo",
         description: [
@@ -87,6 +91,7 @@ const softSkills = [
             "Me gusta mucho trabajar en equipo, tratar de comprender una situación, organizar proyectos, analizar varias posibles soluciones, etc. Siempre con buena comunicación"
         ]
     },
+
     {
         skill: "Organizado",
         description: [
@@ -95,6 +100,7 @@ const softSkills = [
             "Me gusta mucho trabajar en base a objetivos."
         ]
     },
+    
     {
         skill: "Versátil",
         description: [
@@ -155,7 +161,8 @@ const projects = [
         techStack: {
             cardList: [
                 reactSrc,
-                reactRouterDomSrc
+                reactRouterDomSrc,
+                cssSrc
                 // expressSrc,
                 // postgressSrc,
                 // sequelizeSrc
@@ -203,6 +210,7 @@ const projects = [
         techStack: {
             cardList: [
                 reactSrc,
+                nodeSrc,
                 expressSrc,
                 postgressSrc,
                 sequelizeSrc
@@ -285,6 +293,46 @@ const projects = [
                 htmlSrc,
                 bootstrapSrc,
                 jsSrc
+            ],
+
+            fullList: [
+                reactSrc,
+                cssSrc,
+                nodeSrc,
+                expressSrc,
+                mongoSrc,
+                gitSrc
+            ]
+        },
+
+        description: [
+            {
+                title: "Descripción del proyecto",
+                content: ["hola"]
+            },
+            {
+                title: "¿Cómo fue el proceso?",
+                content: ["hola"]
+            },
+            {
+                title: "¿Qué aprendí?",
+                content: ["hola"]
+            },
+        ]
+    },
+
+    {
+        id: 6,
+        name: "PersonalPortfolio",
+        thumbnail: portfolio1,
+        images: [portfolio1],
+
+        techStack: {
+            cardList: [
+                reactSrc,
+                cssSrc,
+                reactRouterDomSrc,
+                motionSrc
             ],
 
             fullList: [
