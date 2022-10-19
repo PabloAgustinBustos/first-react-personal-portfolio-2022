@@ -2,8 +2,17 @@ import React from 'react'
 import {motion} from "framer-motion"
 import s from "./styles.module.css"
 import { projectVariants } from '../../views/Proyectos/animations'
+import { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 
-const ProjectCard = ({id, onClick, controls, name, tech, thumbnail}) => {
+const ProjectCard = ({id, actualId, onClick, controls, name, tech, thumbnail}) => {
+
+    const navigate = useNavigate()
+
+    const handleClick = e => {
+        navigate("/proyectos/"+id)
+    }
+
     return (
         <motion.div 
             variants={projectVariants}
@@ -12,8 +21,6 @@ const ProjectCard = ({id, onClick, controls, name, tech, thumbnail}) => {
                 opacity: 0,
                 scale: .5
             }}
-
-            animate={controls}
 
             custom={id}
 
@@ -27,10 +34,8 @@ const ProjectCard = ({id, onClick, controls, name, tech, thumbnail}) => {
             }}
 
             className={s.card}
-
-            
         >
-            <div className={s.trigger} onClick={onClick} id={id}></div>
+            <div className={s.trigger} id={id} onClick={handleClick}></div>
             <section className={s.img}>
                 <img src={thumbnail}/>
             </section>

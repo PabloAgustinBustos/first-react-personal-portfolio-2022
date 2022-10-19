@@ -7,6 +7,7 @@ import Skills from './views/Skills'
 import Proyectos from './views/Proyectos'
 import Educacion from './views/Educacion'
 import GlobalStates from './components/GlobalStates'
+import Proyecto from './views/Proyecto'
 
 function App() {
   let {pathname} = window.location
@@ -25,6 +26,7 @@ function App() {
             <Route path='/home' element={<Home/>}/>
             <Route path='/skills' element={<Skills/>}/>
             <Route path='/proyectos' element={<Proyectos/>}/>
+            <Route path='/proyectos/:id' element={<Proyecto/>}/>
             <Route path='/educacion' element={<Educacion/>}/>
           </Routes>
         </GlobalStates>

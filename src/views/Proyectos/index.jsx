@@ -8,6 +8,8 @@ import { useContext } from 'react'
 import { MyContext } from '../../components/GlobalStates'
 import { backgroundVariants, titleVariants } from './animations'
 import { useEffect } from 'react'
+import { useState } from 'react'
+import { useRef } from 'react'
 
 const Proyectos = () => {    
     const {controls} = useContext(MyContext)
@@ -16,12 +18,9 @@ const Proyectos = () => {
         controls.start("visible")
     }, [])
 
-    function handleClick(e) {
-        console.log(e.target.id)
-    }
-
     return (
         <motion.main variants={backgroundVariants} custom={"toLight"} animate={controls} className={s.container}>
+            
             <motion.section variants={titleVariants} initial="hidden" animate={controls} className={s.title}>
                 <h1 className={s.texto}>Vengo trabajando con un total de <span className={s.fast}>{stats.projects} PROYECTOS</span> <span className={s.hide}>{stats.projects} PROYECTOS</span></h1>
             </motion.section>
@@ -30,7 +29,6 @@ const Proyectos = () => {
                 <div className={s.cards}>
                     {projects.map(p => (
                         <ProjectCard 
-                            onClick={handleClick}
                             key={p.id}
                             id={p.id}
                             controls={controls}
@@ -43,6 +41,7 @@ const Proyectos = () => {
             </section>
         </motion.main>
     )
+    
 }
 
 export default Proyectos

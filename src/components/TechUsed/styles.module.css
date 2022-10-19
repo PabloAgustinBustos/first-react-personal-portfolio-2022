@@ -1,0 +1,40 @@
+.skills{
+    width: 580px;
+    height: 300px;
+    /* background-color: aliceblue; */
+    border: 5px solid #2A96AE;
+    box-sizing: border-box;
+    border-radius: 17px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tagContainer{
+    width: 100%;
+    /* background-color: rgb(9, 44, 101); */
+    position: absolute;
+    top: -18px;
+    text-align: center;
+}
+
+.tag{
+    padding: 0 5px;
+    width: 100%;
+    font-family: "Inter";
+    color: #2A96AE;
+    font-weight: 400;
+    font-size: 23px;
+    background-color: rgb(0, 9, 23);
+}
+
+.icons{
+    width: 78%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}

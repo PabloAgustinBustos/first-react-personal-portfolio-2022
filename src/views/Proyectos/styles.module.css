@@ -1,10 +1,48 @@
 .container{
     height: 92vh;
-    background-color: #000917;
+    background-color: rgb(0, 9, 23);
     color: #4B89DC;
 
     display: grid;
     grid-template-rows: 1.5fr 10fr;
+}
+
+.back{
+    width: 100%; 
+    height: 100%; 
+    background-color: rgb(5, 14, 54); 
+    position: absolute; 
+    z-index: 300;
+    opacity: .7;
+    animation-name: showBack;
+    animation-duration: .5s;
+    animation-timing-function: ease;
+}
+
+@keyframes showBack{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: .7;
+    }
+}
+
+.in{
+    animation-name: scaleAndHide;
+    animation-duration: .5s;
+    animation-timing-function: ease;
+}
+
+@keyframes scaleAndHide{
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(2);
+    }
 }
 
 .title{

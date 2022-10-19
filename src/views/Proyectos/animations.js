@@ -31,6 +31,9 @@ const titleVariants = {
     change:{
         // scale: 0,
         x: "180vh"
+    },
+    showProject:{
+        x: "180vh"
     }
 }
 
@@ -56,6 +59,10 @@ const projectVariants = {
                 delay: .01 * custom
             }
         }
+    },
+
+    showThisProject: {
+        scale: 2
     }
 }
 

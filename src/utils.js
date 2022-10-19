@@ -116,6 +116,7 @@ const projects = [
         name: "PokePI",
         thumbnail: pokePI1,
         images: [pokePI1, pokePI2, pokePI3, pokePI4],
+        link: "https://pokemon-pi-beta.vercel.app/",
 
         techStack: {
             cardList: [
@@ -127,6 +128,7 @@ const projects = [
 
             fullList: [
                 reactSrc,
+                reactRouterDomSrc,
                 cssSrc,
                 nodeSrc,
                 expressSrc,
@@ -170,12 +172,8 @@ const projects = [
 
             fullList: [
                 reactSrc,
-                cssSrc,
-                nodeSrc,
-                expressSrc,
-                postgressSrc,
-                sequelizeSrc,
-                gitSrc
+                reactRouterDomSrc,
+                cssSrc
             ]
         },
 
@@ -218,7 +216,9 @@ const projects = [
 
             fullList: [
                 reactSrc,
+                reactRouterDomSrc,
                 cssSrc,
+                materialSrc,
                 nodeSrc,
                 expressSrc,
                 postgressSrc,

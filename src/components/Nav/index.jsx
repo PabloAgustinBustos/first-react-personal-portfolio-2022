@@ -22,13 +22,16 @@ const Nav = () => {
     }, [])
 
     useEffect(() => {
-        if(pathname === "/home" || pathname === "/proyectos"){
+        
+        if(pathname === "/home" || pathname.startsWith("/proyectos")){
+            console.log("uno porque page es", pathname)
             setStyle({
                 nav: "navLight",
                 link: "linkDark",
                 
             })       
         }else{
+            console.log("dos porque page es", pathname)
             setStyle({
                 nav: "navDark",
                 link: "linkLight",
@@ -47,18 +50,17 @@ const Nav = () => {
     const handleClick = (e) => {
         e.preventDefault()
         let page = e.target.id
-        let duration = 0
         
         if("/"+page === pathname) return
 
         controls.start("change")
 
         if(page === "skills" || page === "educacion"){
+            console.log("uno porque page es", page)
             controls.start("bgToLight")
             controls.start("navToDark")
-            duration = 200
         }else{
-            duration = 500
+            console.log("dos porque page es", page)
             controls.start("bgToDark")
             controls.start("navToLight")
         }
