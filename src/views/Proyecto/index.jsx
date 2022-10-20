@@ -17,34 +17,29 @@ const Proyecto = () => {
     const handleClick = () => window.open(project.link, '_blank');
 
     return (
-        <main className={s.container}>
+        <main className={s.container}>    
             <section className={s.project}>
                 <section className={s.top}>
-                    <div className={s.left}>
+                    <section className={s.left}>
                         <Carrousel images={project.images}/>
-                    </div>
-
-                    <div className={s.right}>
-                        {/* <div className={s.infoContainer}>
-                            <section className={s.titleContainer}>
-                                <h1 className={s.title}>{project.name}</h1>
-
-                                <Button onClick={handleClick} text="Ir a la app" form="bgDark"/>
-                            </section>
-
-                            <TechUsed>
-                                {project.techStack.fullList.map(src => (
-                                    <div className={s.iconContainer}>
-                                        <img className={s.icon} key={src} src={src}/>
-                                    </div>
-                                ))}
-                            </TechUsed>
-                        </div> */}
-                    </div>
-                </section>
-
-                <section className={s.bot}>
+                    </section>
                     
+                    <section className={s.right}>
+                        right
+                    </section>
+                </section>
+                
+                <section className={s.bot}>
+                    bot<br/>
+                    bot<br/>
+                    bot<br/>
+                    bot<br/>
+                    bot<br/>
+                    bot<br/>
+                    bot<br/>
+                    bot<br/>
+                    bot<br/>
+                    bot<br/>
                 </section>
             </section>
         </main>

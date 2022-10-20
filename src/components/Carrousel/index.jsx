@@ -18,7 +18,7 @@ const Carrousel = ({images}) => {
     
     const handleClick = e => {
         const {id} = e.target
-
+        
         if(id === "next"){
             setCurrent(prev => prev+1)
         }else{
@@ -28,22 +28,17 @@ const Carrousel = ({images}) => {
 
     return (
         <div className={s.container}>
-            <div className={s.imgContainer}>
-                <img className={s.image} src={images[current]}/>
-                <div className={s.buttons}>
-                    <div>
-                        <img id="prev" className={s.prev} onClick={handleClick} src={left}/>
-                    </div>
-                    <div>
-                        <img id="next" className={s.next} onClick={handleClick} src={right}/>
-                    </div>
-                </div>
+            <div className={s.topContainer}>
+                <img className={s.img} src={images[current]}/>
             </div>
-                    
+
             <div className={s.pagination}>
-                <div className={s.circleGroup}>
+                <div className={s.circles}>
                     {images.map((i, id) => (
-                        <div onClick={() => setCurrent(id)} className={`${s.circle} ${current == id ? s.selected : null}`}></div>
+                        <div
+                            className={`${s.circle} ${id==current ? s.selected : null}`}
+                            onClick={() => setCurrent(id)}
+                        ></div>
                     ))}
                 </div>
             </div>

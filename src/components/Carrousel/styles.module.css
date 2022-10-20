@@ -1,45 +1,44 @@
 .container{
-    width: fit-content;
-    /* height: 350px; */
-    /* background-color: beige; */
-}
-
-.imgContainer{
-    margin-bottom: 15px;
-    width: 500px;
-    height: 300px;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    border-radius: 16px;
-    overflow: hidden;
-}
-
-.image{
-    object-fit: contain;
-    border-radius: 16px;
-}
-
-.pagination{
-    display: flex;
-    justify-content: center;
-    /* background-color: blue; */
-}
-
-.circleGroup{
-    width: 150px;
+    width: 610px;
+    height: 423px;
     
-    /* background-color: cadetblue; */
-
+    /* background-color: rgb(99, 99, 99); */
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
+.topContainer{
+    width: inherit;
+    height: 90%;
+    background-color: black;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.img{
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: inherit;
+}
+
+.circles{
+    margin: 0 auto;
+    width: fit-content;
+    height: 27px;
+    /* background-color: aqua; */
+    display: flex;
+}
+
 .circle{
-    width: 30px;
-    height: 30px;
+    margin: 0 5px;
+    width: 27px;
+    height: 27px;
+
     border: 2px solid white;
     border-radius: 50%;
+
     box-sizing: border-box;
 }
 
@@ -49,23 +48,4 @@
 
 .selected{
     background-color: white;
-}
-
-.prev, .next{
-    width: 50px;
-}
-
-.prev:hover, .next:hover{
-    cursor: pointer;
-}
-
-.buttons{
-    width: 460px;
-    height: inherit;
-    /* background-color: aqua; */
-    position: absolute;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
