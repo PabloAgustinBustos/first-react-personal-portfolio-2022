@@ -2,7 +2,7 @@
     width: 610px;
     height: 423px;
     
-    background-color: rgb(99, 99, 99);
+    /* background-color: rgb(99, 99, 99); */
     display: flex;
     flex-direction: column;
     justify-content: space-between;

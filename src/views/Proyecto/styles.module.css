@@ -7,43 +7,99 @@
 }
 
 .project{
-    /* width: 98%; */
     height: 90vh;
     margin: 0 auto;
     padding: 5px;
-    
-    /* background-color: rgb(71, 71, 72); */
     overflow-y: scroll;
 }
 
 .top{
+    /* margin-bottom: 10px; */
     height: 490px;
-    background-color: aqua;
+
     display: flex;
     justify-content: space-between;
 }
 
 .left{
     width: 50%;
-    background-color: blueviolet;
+    
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .right{
-    background-color: rgb(69, 69, 241);
+    width: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header{
+    width: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+.small{
+    font-size: 40px;
+}
+
+.normal{
+    font-size: 60px;
+}
+
+.normalIcon{
+    width: 110px;
+}
+
+.smallIcon{
+    width: 80px;
 }
 
 .bot{
-
     
 }
 
+.paragraph{
+    margin: 40px 0;
+    /* background-color: aqua; */
+}
 
+.description_title{
+    margin-bottom: 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+}
 
+.text{
+    margin-bottom: 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
 
+.color1{
+    color: #2A96AE
+}
 
+.color2{
+    color: #AE2A52
+}
+
+.color3{
+    color: #2DAE2A
+}
 
 .project::-webkit-scrollbar{
     width: 10px;

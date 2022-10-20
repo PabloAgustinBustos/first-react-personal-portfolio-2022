@@ -1,7 +1,7 @@
 import React from 'react'
 import s from "./styles.module.css"
 import { useNavigate, useParams } from 'react-router-dom'
-import {projects} from "../../utils"
+import {colors, projects} from "../../utils"
 import { useContext } from 'react'
 import { MyContext } from '../../components/GlobalStates'
 import { buttonVariants } from '../Home/animations'
@@ -25,21 +25,30 @@ const Proyecto = () => {
                     </section>
                     
                     <section className={s.right}>
-                        right
+                        <article className={s.header}>
+                            <h1 className={`${s.name} ${ project.name.length > 11 ? s.small : s.normal}`}>{project.name}</h1>
+                            <Button text="Ir a la página" form="bgDark" onClick={handleClick}/>
+                        </article>
+
+                        <TechUsed>
+                            {project.techStack.fullList.map((src, id, array) => (
+                                <img className={array.length > 8 ? s.smallIcon : s.normalIcon} key={src} src={src}/>
+                            ))}
+                        </TechUsed>
                     </section>
                 </section>
                 
                 <section className={s.bot}>
-                    bot<br/>
-                    bot<br/>
-                    bot<br/>
-                    bot<br/>
-                    bot<br/>
-                    bot<br/>
-                    bot<br/>
-                    bot<br/>
-                    bot<br/>
-                    bot<br/>
+                    {project.description.map((des, i) => {
+
+                        const {title, content} = des
+                        
+                        return(<article key={title} className={s.paragraph}>
+                            <h1 className={`${s.description_title} ${s[colors[i]]}`}>{title}</h1>
+
+                            {content.map(text => (<p className={s.text}>{text}</p>))}
+                        </article>)
+                    })}
                 </section>
             </section>
         </main>
