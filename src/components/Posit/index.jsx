@@ -14,7 +14,7 @@ const Posit = ({tech}) => {
                 </section>
                 
                 <section className={s.techIcons}>
-                    {techIcons[tech].map(src => <img className={s.icon} key={src} src={src}/>)}
+                    {techIcons[tech].map(({title, src}) => <img title={title} className={s.icon} key={src} src={src}/>)}
                 </section>
             </div>
         </div>

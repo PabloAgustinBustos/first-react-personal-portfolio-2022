@@ -61,8 +61,18 @@ const projectVariants = {
         }
     },
 
-    showThisProject: {
-        scale: 2
+    showProject: (custom) => {
+        let y = 0;
+
+        if(custom%2 === 1){
+            y = "100vh"
+        }else{
+            y = "-100vh"
+        }
+
+        return{
+            y,
+        }
     }
 }
 

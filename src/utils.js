@@ -52,9 +52,107 @@ import portfolio3 from "./assets/img/portfolio/3.jpg"
 import portfolio4 from "./assets/img/portfolio/4.jpg"
 
 const techIcons = {
-    front: [htmlSrc, cssSrc, tsSrc, reactSrc, materialSrc, nextSrc],
-    back: [nodeSrc, expressSrc, postgressSrc, sequelizeSrc, mongoSrc],
-    agile: [gitSrc, devopsSrc, scrumSrc, mvcSrc]
+    front: [
+        {
+            title: "html",
+            src: htmlSrc
+        },
+
+        {
+            title: "css",
+            src: cssSrc
+        },
+        
+        {
+            title: "TypeScript",
+            src: tsSrc
+        },
+        
+        {
+            title: "ReactJS",
+            src: reactSrc
+        }, 
+
+        {
+            title: "MaterialUI",
+            src: materialSrc
+        },
+        {
+            title: "NextJS",
+            src: nextSrc
+        }
+    ],
+    
+    back: [
+        {
+            title: "NodeJS",
+            src: nodeSrc
+        },
+
+        {
+            title: "ExpressJS",
+            src: expressSrc
+        },
+        
+        {
+            title: "PostgreSQL",
+            src: postgressSrc
+        },
+        
+        {
+            title: "Sequelize",
+            src: sequelizeSrc
+        }, 
+
+        {
+            title: "MongoDB",
+            src: mongoSrc
+        }
+    ],
+
+    agile: [
+        {
+            title: "git",
+            src: gitSrc
+        },
+
+        {
+            title: "DevOps",
+            src: devopsSrc,
+        },
+
+        {
+            title: "scrum",
+            src: scrumSrc
+        },
+
+        {
+            title: "MVC",
+            src: mvcSrc
+        }
+    ],
+
+    more: [
+        {
+            title: "react-router-dom",
+            src: reactRouterDomSrc
+        },
+
+        {
+            title: "framer-motion",
+            src: motionSrc
+        },
+
+        {
+            title: "Bootstrap",
+            src: bootstrapSrc
+        },
+
+        {
+            title: "Javascript",
+            src: jsSrc
+        }
+    ]
 }
 
 const positOf = {
@@ -132,14 +230,14 @@ const projects = [
             ],
 
             fullList: [
-                reactSrc,
-                reactRouterDomSrc,
-                cssSrc,
-                nodeSrc,
-                expressSrc,
-                postgressSrc,
-                sequelizeSrc,
-                gitSrc
+                techIcons.front[3],
+                techIcons.more[0],
+                techIcons.front[1],
+                techIcons.back[0],
+                techIcons.back[1],
+                techIcons.back[2],
+                techIcons.back[3],
+                techIcons.agile[0]
             ]
         },
 
@@ -188,9 +286,9 @@ const projects = [
             ],
 
             fullList: [
-                reactSrc,
-                reactRouterDomSrc,
-                cssSrc
+                techIcons.front[3],
+                techIcons.more[0],
+                techIcons.front[1],
             ]
         },
 
@@ -233,15 +331,15 @@ const projects = [
             ],
 
             fullList: [
-                reactSrc,
-                reactRouterDomSrc,
-                cssSrc,
-                materialSrc,
-                nodeSrc,
-                expressSrc,
-                postgressSrc,
-                sequelizeSrc,
-                gitSrc
+                techIcons.front[3],
+                techIcons.more[0],
+                techIcons.front[1],
+                techIcons.front[4],
+                techIcons.back[0],
+                techIcons.back[1],
+                techIcons.back[2],
+                techIcons.back[3],
+                techIcons.agile[0],
             ]
         },
 
@@ -288,12 +386,12 @@ const projects = [
             ],
 
             fullList: [
-                reactSrc,
-                cssSrc,
-                nodeSrc,
-                expressSrc,
-                mongoSrc,
-                gitSrc
+                techIcons.front[3],
+                techIcons.front[1],
+                techIcons.back[0],
+                techIcons.back[1],
+                techIcons.back[4],
+                techIcons.agile[0],
             ]
         },
 
@@ -328,12 +426,9 @@ const projects = [
             ],
 
             fullList: [
-                reactSrc,
-                cssSrc,
-                nodeSrc,
-                expressSrc,
-                mongoSrc,
-                gitSrc
+                techIcons.front[0],
+                techIcons.more[2],
+                techIcons.more[3]
             ]
         },
 
@@ -374,12 +469,10 @@ const projects = [
             ],
 
             fullList: [
-                reactSrc,
-                cssSrc,
-                nodeSrc,
-                expressSrc,
-                mongoSrc,
-                gitSrc
+                techIcons.front[3],
+                techIcons.front[1],
+                techIcons.more[0],
+                techIcons.more[1]
             ]
         },
 

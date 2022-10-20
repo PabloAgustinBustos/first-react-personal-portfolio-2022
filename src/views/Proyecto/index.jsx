@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from "framer-motion"
 import s from "./styles.module.css"
 import { useNavigate, useParams } from 'react-router-dom'
 import {colors, projects} from "../../utils"
@@ -8,6 +9,8 @@ import { buttonVariants } from '../Home/animations'
 import Button from '../../components/Button'
 import TechUsed from '../../components/TechUsed'
 import Carrousel from '../../components/Carrousel'
+import { botVariants, topVariants } from './animations'
+import { useEffect } from 'react'
 const Proyecto = () => {
     const {id} = useParams()
     const {controls} = useContext(MyContext)
@@ -16,29 +19,53 @@ const Proyecto = () => {
 
     const handleClick = () => window.open(project.link, '_blank');
 
+    useEffect(() => {
+        controls.start("visible")
+    }, [])
+
     return (
         <main className={s.container}>    
             <section className={s.project}>
                 <section className={s.top}>
-                    <section className={s.left}>
+                    <motion.section 
+                        className={s.left}
+                        variants={topVariants}
+                        initial="hidden"
+                        animate={controls}
+                        custom="left"
+                    >
                         <Carrousel images={project.images}/>
-                    </section>
+                    </motion.section>
                     
-                    <section className={s.right}>
+                    <motion.section 
+                        className={s.right}
+                        variants={topVariants}
+                        initial="hidden"
+                        animate={controls}
+                        custom="right"
+                    >
                         <article className={s.header}>
-                            <h1 className={`${s.name} ${ project.name.length > 11 ? s.small : s.normal}`}>{project.name}</h1>
+                            <div className={s.leftSection}>
+                                <h1 className={`${s.name} ${ project.name.length > 11 ? s.small : s.normal}`}>{project.name}</h1>
+                                <span className={s.version}>v{project.version}</span>
+                            </div>
                             <Button text="Ir a la página" form="bgDark" onClick={handleClick}/>
                         </article>
 
                         <TechUsed>
-                            {project.techStack.fullList.map((src, id, array) => (
-                                <img className={array.length > 8 ? s.smallIcon : s.normalIcon} key={src} src={src}/>
+                            {project.techStack.fullList.map(({title, src}, id, array) => (
+                                <img className={array.length > 8 ? s.smallIcon : s.normalIcon} key={title} title={title} src={src}/>
                             ))}
                         </TechUsed>
-                    </section>
+                    </motion.section>
                 </section>
                 
-                <section className={s.bot}>
+                <motion.section 
+                    className={s.bot}
+                    variants={botVariants}
+                    initial="hidden"
+                    animate={controls}
+                >
                     {project.description.map((des, i) => {
 
                         const {title, content} = des
@@ -49,7 +76,7 @@ const Proyecto = () => {
                             {content.map(text => (<p className={s.text}>{text}</p>))}
                         </article>)
                     })}
-                </section>
+                </motion.section>
             </section>
         </main>
     )

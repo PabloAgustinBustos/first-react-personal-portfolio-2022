@@ -4,13 +4,16 @@ import s from "./styles.module.css"
 import { projectVariants } from '../../views/Proyectos/animations'
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useContext } from 'react'
 
 const ProjectCard = ({id, actualId, onClick, controls, name, tech, thumbnail}) => {
-
     const navigate = useNavigate()
 
     const handleClick = e => {
-        navigate("/proyectos/"+id)
+        controls.start("showProject")
+        setTimeout(() => {
+            navigate("/proyectos/"+id)
+        }, 200)
     }
 
     return (
