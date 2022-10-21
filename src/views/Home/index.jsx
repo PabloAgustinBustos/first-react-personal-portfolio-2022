@@ -10,8 +10,11 @@ import { backgroundVariants, buttonVariants, descriptionVariants, githubVariants
 import { useContext } from 'react'
 import { MyContext } from '../../components/GlobalStates'
 import { useEffect } from 'react'
+import { useState } from 'react'
+import Modal from '../../components/Modal'
 
 const Home = () => {
+    const [showModal, setShowModal] = useState(false)
     const {controls} = useContext(MyContext)
 
     useEffect(() => {
@@ -116,9 +119,11 @@ const Home = () => {
                         <p className={s.description}>Mi objetivo es crecer personal y profesionalmente afrontando nuevos desafios en mi vida.</p>
                     </motion.div>
 
-                    <Button controls={controls} variants={buttonVariants} text="Ver trayectoria" form="bgDark"/>
+                    <Button controls={controls} variants={buttonVariants} onClick={() => setShowModal(true)} text="Ver trayectoria" form="bgDark"/>
                 </motion.section>
             </div>
+
+            {showModal && <Modal setShowModal={setShowModal}/>}
         </motion.main>
     )
 }

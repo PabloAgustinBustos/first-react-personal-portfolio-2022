@@ -542,6 +542,23 @@ const stats = {
     courses: courses.length
 }
 
+const journy = [
+    {
+        time: "pasado",
+        text: ""
+    },
+
+    {
+        time: "presente",
+        text: ""
+    },
+    
+    {
+        time: "futuro",
+        text: ""
+    },
+]
+
 export {
     techIcons, 
     positOf, 
@@ -549,5 +566,6 @@ export {
     projects, 
     colors,
     stats, 
-    courses
+    courses,
+    journy
 }
