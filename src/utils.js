@@ -398,15 +398,20 @@ const projects = [
         description: [
             {
                 title: "Descripción del proyecto",
-                content: ["hola"]
+                content: [
+                    "Una app simple que te permite agregar tareas por medio de un formulario.",
+                    "También permite editar el status para determinar si está completada o no y permite eliminar la tarea."
+                ]
             },
             {
                 title: "¿Cómo fue el proceso?",
-                content: ["hola"]
+                content: [
+                    "Si bien no fué tan interesante ya que es un proyecto que había hecho hace mucho, debo destacar que estuve jugando con animaciones en CSS para prácticar y practicando el paradigma no-sql para bases de datos."
+                ]
             },
             {
                 title: "¿Qué aprendí?",
-                content: ["hola"]
+                content: ["Aprendí a trabajar con mongoDB para el manejo de las bases de datos no relacionales"]
             },
         ]
     },
@@ -435,22 +440,25 @@ const projects = [
         description: [
             {
                 title: "Descripción del proyecto",
-                content: ["hola"]
+                content: [
+                    "Una app simple que te permite agregar tareas por medio de un formulario.",
+                    "También permite eliminar la tarea."
+                ]
             },
             {
                 title: "¿Cómo fue el proceso?",
-                content: ["hola"]
+                content: ["Fué muy entretenido trabajar con javascript vanilla, sin un framework o librería que me esté asistiendo, ya que esto ayuda a incrementar el ingenio a la hora de crear una solución en forma de aplicación web"]
             },
             {
                 title: "¿Qué aprendí?",
-                content: ["hola"]
+                content: ["Aprendí sobre todo el flujo de trabajo para javascript vanilla, quizá no de una manera eficiente, pero si eficaz."]
             },
         ]
     },
 
     {
         id: 6,
-        version: "1.0.0",
+        version: "1.3.4-beta",
         name: "PersonalPortfolio",
         thumbnail: portfolio1,
         images: [
@@ -479,15 +487,22 @@ const projects = [
         description: [
             {
                 title: "Descripción del proyecto",
-                content: ["hola"]
+                content: [
+                    "Una SPA que permite mostrarme y presentarme al mundo de una manera amigable, mostrando los proyectos en los que trabajé, mis valores y lo que puedo aportar en cualquier proyecto"
+                ]
             },
             {
                 title: "¿Cómo fue el proceso?",
-                content: ["hola"]
+                content: [
+                    "La verdad fué un viaje muy intenso pero emocionante, trabajar en mi propio proyecto es algo que no tiene precio.",
+                    "pasé por todo el proceso de idear lo qué quiero mostrar, cómo lo quiero mostrar, qué quiero transmitir, explicar de la mejor manera ¿quién soy? y darle mi toque curioso y creativo al asunto, lo cual me llevó a aprender bastantes cosas."
+                ]
             },
             {
                 title: "¿Qué aprendí?",
-                content: ["hola"]
+                content: [
+                    "Aprendí el manejo de la librería framer-motion para animaciones de componentes, además de solucionar problemas que me iban sucediendo a lo largo del desarrollo, como el cambio de color del menú, las transiciones, el carrousel de imágenes de cáda proyecto, etc.",
+                ]
             },
         ]
     },
@@ -541,31 +556,6 @@ const stats = {
     projects: projects.length,
     courses: courses.length
 }
-
-// const journy = [
-//     {
-//         time: "pasado",
-//         text: [
-//             "pasadoooooooooooooooooooooo"
-//         ]
-//     },
-
-//     {
-//         time: "presente",
-//         text: [
-//             "Al día de hoy [-DATE-] sigo aprendiendo un montón de cosas nuevas por mi propia cuenta, remasterizando conocimientos adquiridos, aprendiendo nuevas prácticas, realizando proyectos, trabajando en equipo y lo más importante, dándole forma a mis ideas, materializando lo que tengo en la cabeza.",
-//             "Estoy aprendiendo nuevas tecnologías como Next.js, sass y nuevas maneras de trabajar como el testing, los patrones de diseño, diferentes estratégias de branching, etc.",
-//             "lo más relevante en este momento presente es aplicar todos mis conocimientos en algo real y descubrir nuevas cosas a medida que voy trabajando."
-//         ]
-//     },
-    
-//     {
-//         time: "futuro",
-//         text: [
-//             "futurooooooooooooooooooooo"
-//         ]
-//     },
-// ]
 
 const journy = {
     pasado: [
