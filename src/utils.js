@@ -507,7 +507,7 @@ const projects = [
         ]
     },
 ]
-
+/* */
 const colors = {
     0: "color1",
     1: "color2",
