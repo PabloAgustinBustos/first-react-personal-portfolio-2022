@@ -1,20 +1,20 @@
 const lineVariants={
-    past:{
+    pasado:{
         borderLeft: "0px solid #CB0972",
         transition:{
             duration: 1
         }
     },
 
-    present:{
+    presente:{
         borderLeft: "200px solid #CB0972",
         transition:{
             duration: 1
         }
     },
 
-    future:{
-        borderLeft: "392px solid #CB0972",
+    futuro:{
+        borderLeft: "400px solid #CB0972",
         transition:{
             duration: 1
         }

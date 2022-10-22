@@ -60,6 +60,10 @@
     box-sizing: border-box;
 }
 
+.circle:hover{
+    cursor: pointer;
+}
+
 .color{
     border-color: #CB0972;
     animation-name: show;

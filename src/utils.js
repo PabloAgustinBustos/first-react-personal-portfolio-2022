@@ -542,22 +542,52 @@ const stats = {
     courses: courses.length
 }
 
-const journy = [
-    {
-        time: "pasado",
-        text: ""
-    },
+// const journy = [
+//     {
+//         time: "pasado",
+//         text: [
+//             "pasadoooooooooooooooooooooo"
+//         ]
+//     },
 
-    {
-        time: "presente",
-        text: ""
-    },
+//     {
+//         time: "presente",
+//         text: [
+//             "Al día de hoy [-DATE-] sigo aprendiendo un montón de cosas nuevas por mi propia cuenta, remasterizando conocimientos adquiridos, aprendiendo nuevas prácticas, realizando proyectos, trabajando en equipo y lo más importante, dándole forma a mis ideas, materializando lo que tengo en la cabeza.",
+//             "Estoy aprendiendo nuevas tecnologías como Next.js, sass y nuevas maneras de trabajar como el testing, los patrones de diseño, diferentes estratégias de branching, etc.",
+//             "lo más relevante en este momento presente es aplicar todos mis conocimientos en algo real y descubrir nuevas cosas a medida que voy trabajando."
+//         ]
+//     },
     
-    {
-        time: "futuro",
-        text: ""
-    },
-]
+//     {
+//         time: "futuro",
+//         text: [
+//             "futurooooooooooooooooooooo"
+//         ]
+//     },
+// ]
+
+const journy = {
+    pasado: [
+        "Poco a poco la vida me fue llevando al mundo de la programación y tecnología.",
+        "Mi viaje comienza con 15 años ya que a esa edad jugaba muchos videojuegos y me interesaba la informática. En ese entonces conocí a una persona que me pregunta '¿qué te gustaría hacer en el futuro?'. Inmediatamente le respondí que estudiar informática y desarrollar videojuegos. Lo dije sin pensar, como si ya lo hubiera decidido sin darme cuenta.",
+        "Entonces me recomienda inscribirme al colegio técnico donde él daba clases. Y así fué como pasé de un bachiller a un colegio técnico en computación.",
+        "Comencé a aprender el 15% de lo que sé en el colegio y el otro 85% por mi propia cuenta, tomando el control de mi propia educación."
+    ],
+
+    presente: [
+        "Al día de hoy [-DATE-] sigo aprendiendo un montón de cosas nuevas por mi propia cuenta, remasterizando conocimientos adquiridos, aprendiendo nuevas prácticas, realizando proyectos, trabajando en equipo y lo más importante, dándole forma a mis ideas, materializando lo que tengo en la cabeza.",
+        "Estoy aprendiendo nuevas tecnologías como VueJS, SASS, Java y nuevas maneras de trabajar como el testing, los patrones de diseño, diferentes estratégias de branching, etc.",
+        "lo más relevante en este momento presente es aplicar todos mis conocimientos en algo real y descubrir nuevas cosas a medida que voy trabajando."
+    ],
+    
+    futuro: [
+        "Quedarme en un solo lugar durante años y años no es algo que está en mis planes.",
+        "Por esta razón iré cambiando de rama cada ciertos años, ya que me interesa también otros ambientes, como el desarrollo de apps mobiles, desarrollo de videojuegos y las Ciencias de datos.",
+        "En 10 años me veo habiendo ganado mucha experiencia para liderar proyectos que soluciones problemáticas, no solo comunes de la vida cotidiana, sino que ataquen a emergencias globales",
+        "También sueño con tener mi propia empresa de videojuegos donde brindaré a los talentos de todo el mundo la oportunidad de cambiar el mundo para bien, desde su profesión."
+    ],
+}
 
 export {
     techIcons, 
