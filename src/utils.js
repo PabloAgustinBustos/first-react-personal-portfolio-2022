@@ -8,6 +8,7 @@ import jsSrc from "./assets/icons/frontSkills/js.png"
 import nextSrc from "./assets/icons/frontSkills/NextJS.png"
 import reactRouterDomSrc from "./assets/icons/frontSkills/reactRouterDom.png"
 import motionSrc from "./assets/icons/frontSkills/motion.png"
+import vueSrc from "./assets/icons/frontSkills/vue.png"
 
 import nodeSrc from "./assets/icons/backSkills/node.png"
 import expressSrc from "./assets/icons/backSkills/express.png"
@@ -51,6 +52,13 @@ import portfolio2 from "./assets/img/portfolio/2.jpg"
 import portfolio3 from "./assets/img/portfolio/3.jpg"
 import portfolio4 from "./assets/img/portfolio/4.jpg"
 
+import taskTracker1 from "./assets/img/VueTaskTracker/1.jpg"
+import taskTracker2 from "./assets/img/VueTaskTracker/2.jpg"
+import taskTracker3 from "./assets/img/VueTaskTracker/3.jpg"
+import taskTracker4 from "./assets/img/VueTaskTracker/4.jpg"
+import taskTracker5 from "./assets/img/VueTaskTracker/5.jpg"
+import taskTracker6 from "./assets/img/VueTaskTracker/6.jpg"
+
 const techIcons = {
     front: [
         {
@@ -80,7 +88,12 @@ const techIcons = {
         {
             title: "NextJS",
             src: nextSrc
+        },
+        {
+            title: "VueJS",
+            src: vueSrc
         }
+
     ],
     
     back: [
@@ -481,6 +494,56 @@ const projects = [
                 techIcons.front[1],
                 techIcons.more[0],
                 techIcons.more[1]
+            ]
+        },
+
+        description: [
+            {
+                title: "Descripción del proyecto",
+                content: [
+                    "Una SPA que permite mostrarme y presentarme al mundo de una manera amigable, mostrando los proyectos en los que trabajé, mis valores y lo que puedo aportar en cualquier proyecto"
+                ]
+            },
+            {
+                title: "¿Cómo fue el proceso?",
+                content: [
+                    "La verdad fué un viaje muy intenso pero emocionante, trabajar en mi propio proyecto es algo que no tiene precio.",
+                    "pasé por todo el proceso de idear lo qué quiero mostrar, cómo lo quiero mostrar, qué quiero transmitir, explicar de la mejor manera ¿quién soy? y darle mi toque curioso y creativo al asunto, lo cual me llevó a aprender bastantes cosas."
+                ]
+            },
+            {
+                title: "¿Qué aprendí?",
+                content: [
+                    "Aprendí el manejo de la librería framer-motion para animaciones de componentes, además de solucionar problemas que me iban sucediendo a lo largo del desarrollo, como el cambio de color del menú, las transiciones, el carrousel de imágenes de cáda proyecto, etc.",
+                ]
+            },
+        ]
+    },
+
+    {
+        id: 7,
+        version: "1.0.0",
+        name: "Vue task tracker",
+        thumbnail: taskTracker1,
+        link: "https://vuejs-task-tracker-pablo-dev-bustos.netlify.app/",
+        images: [
+            taskTracker1,
+            taskTracker2,
+            taskTracker3,
+            taskTracker4,
+            taskTracker5,
+            taskTracker6,
+        ],
+
+        techStack: {
+            cardList: [
+                vueSrc,
+                cssSrc,
+            ],
+
+            fullList: [
+                techIcons.front[6],
+                techIcons.front[1],
             ]
         },
 
