@@ -49,7 +49,7 @@ const Proyecto = () => {
                                 <h1 className={`${s.name} ${ project.name.length > 11 ? s.small : s.normal}`}>{project.name}</h1>
                                 <span className={s.version}>v{project.version}</span>
                             </div>
-                            {project.link.length != "" ? <Button text="Ir a la página" form="bgDark" onClick={handleClick}/> : null}
+                            {project.link ? <Button text="Ir a la página" form="bgDark" onClick={handleClick}/> : null}
                         </article>
 
                         <TechUsed>
