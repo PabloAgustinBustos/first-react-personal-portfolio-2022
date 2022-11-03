@@ -285,6 +285,7 @@ const projects = [
         id: 2,
         version: "1.0.0",
         name: "ClimApp",
+        link: "https://projectclimapp.netlify.app",
         thumbnail: climApp1,
         images: [climApp1, climApp2],
 
@@ -325,6 +326,7 @@ const projects = [
         id: 3,
         version: "1.0.0",
         name: "TechCommerce",
+        link: "https://techcommerce-pf.vercel.app/",
         thumbnail: techCommerce1,
         images: [
             techCommerce1,
