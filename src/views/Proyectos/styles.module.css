@@ -103,4 +103,12 @@
         column-gap: 150px;
         /* background-color: brown; */
     }
+
+    .texto{
+        font-size: 50px;
+    }
+
+    .fast, .hide{
+        font-size: 50px;
+    }
 }

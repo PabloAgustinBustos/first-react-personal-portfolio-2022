@@ -36,7 +36,7 @@ const circleVariants = {
 
 const allCircleVariant = {
     change: {
-        x: "-45vh",
+        x: "-50vh",
         rotate: "-80deg",
         opacity: 0
         // transition: {
@@ -75,15 +75,15 @@ const liVariants = {
 
 const titleVariants = {
     hidden: {
-        fontSize: "0px"
+        scale: 0
     },
     
     visible: {
-        fontSize:"40px"
+        scale: 1
     },
 
     change: {
-        fontSize: "0px"
+        scale: 0
     }
 }
 

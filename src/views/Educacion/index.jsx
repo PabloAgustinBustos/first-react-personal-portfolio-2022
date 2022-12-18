@@ -42,7 +42,7 @@ const Educacion = () => {
     return (
         <motion.main variants={backgroundVariants} custom={"toLight"} animate={controls} className={s.container}>
             <motion.section className={s.titleContainer}>
-                <motion.h1 variants={titleVariants} initial="hidden" animate={controls}>Educación</motion.h1>
+                <motion.h1 className={s.texto} variants={titleVariants} initial="hidden" animate={controls}>Educación</motion.h1>
             </motion.section>
 
             <section className={s.certificatesContainer}>

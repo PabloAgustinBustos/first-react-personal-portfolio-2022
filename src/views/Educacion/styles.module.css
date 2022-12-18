@@ -63,6 +63,7 @@
     font-size: 48px;
     font-weight: 200;
     font-family: 'Inter', sans-serif;
+    
 }
 
 .list{
@@ -90,4 +91,33 @@
 .progress{
     font-family: 'Inter', sans-serif;
     font-weight: 200;
+}
+
+/* extra large monitors */
+@media (min-width: 1400px) and (max-width: 1920px){
+    .texto{
+        font-size: 60px;
+    }
+
+    .content{
+        width: 333px;
+        height: 333px;
+    }
+
+    .totalCertificates{
+        width: 339px;
+        height: 339px;
+    }
+
+    .concept{
+        font-size: 70px;
+    }
+
+    .list{
+        height: 500px;
+    }
+
+    .item{
+        font-size: 35px;
+    }
 }
