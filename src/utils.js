@@ -15,6 +15,7 @@ import expressSrc from "./assets/icons/backSkills/express.png"
 import postgressSrc from "./assets/icons/backSkills/postgress.png"
 import sequelizeSrc from "./assets/icons/backSkills/sequelize.png"
 import mongoSrc from "./assets/icons/backSkills/mongoDB.png"
+import socketio from "./assets/icons/backSkills/socketio.png"
 
 import gitSrc from "./assets/icons/agileSkills/git.png"
 import devopsSrc from "./assets/icons/agileSkills/devops.png"
@@ -58,6 +59,13 @@ import taskTracker3 from "./assets/img/VueTaskTracker/3.jpg"
 import taskTracker4 from "./assets/img/VueTaskTracker/4.jpg"
 import taskTracker5 from "./assets/img/VueTaskTracker/5.jpg"
 import taskTracker6 from "./assets/img/VueTaskTracker/6.jpg"
+
+import RealTimeChatApp1 from "./assets/img/RealTimeChatApp/1.jpg"
+import RealTimeChatApp2 from "./assets/img/RealTimeChatApp/2.jpg"
+import RealTimeChatApp3 from "./assets/img/RealTimeChatApp/3.jpg"
+import RealTimeChatApp4 from "./assets/img/RealTimeChatApp/4.jpg"
+import RealTimeChatApp5 from "./assets/img/RealTimeChatApp/5.jpg"
+import RealTimeChatApp6 from "./assets/img/RealTimeChatApp/6.jpg"
 
 const techIcons = {
     front: [
@@ -120,6 +128,11 @@ const techIcons = {
         {
             title: "MongoDB",
             src: mongoSrc
+        },
+
+        {
+            title: "Socket.io",
+            src: socketio
         }
     ],
 
@@ -473,29 +486,33 @@ const projects = [
 
     {
         id: 6,
-        version: "1.3.4-beta",
-        name: "PersonalPortfolio",
-        thumbnail: portfolio1,
+        version: "1.0.0",
+        name: "RealTimeChatApp",
+        thumbnail: RealTimeChatApp5,
         images: [
-            portfolio1,
-            portfolio2,
-            portfolio3,
-            portfolio4
+            RealTimeChatApp5,
+            RealTimeChatApp6,
+            RealTimeChatApp1,
+            RealTimeChatApp2,
+            RealTimeChatApp3,
+            RealTimeChatApp4,
         ],
 
         techStack: {
             cardList: [
-                reactSrc,
+                vueSrc,
                 cssSrc,
-                reactRouterDomSrc,
-                motionSrc
+                nodeSrc,
+                expressSrc,
+                mongoSrc
             ],
 
             fullList: [
-                techIcons.front[3],
+                techIcons.front[6],
                 techIcons.front[1],
-                techIcons.more[0],
-                techIcons.more[1]
+                techIcons.back[0],
+                techIcons.back[1],
+                techIcons.back[4],
             ]
         },
 
@@ -503,20 +520,22 @@ const projects = [
             {
                 title: "Descripción del proyecto",
                 content: [
-                    "Una SPA que permite mostrarme y presentarme al mundo de una manera amigable, mostrando los proyectos en los que trabajé, mis valores y lo que puedo aportar en cualquier proyecto"
+                    "Una app en la cual el usuario puede registrarse, ingresar a su cuenta, agregar amigos y mandar mensajes a tiempo real.",
+                    "Cuando un mensaje es mandado, le llega al otro usuario al instante y se guarda en la base de datos.",
+                    "También cuando un usuario inicia sesión, los amigos de ese usuario son notificados de dicha conexión con un círculo verde al lado del nombre.",
                 ]
             },
             {
                 title: "¿Cómo fue el proceso?",
                 content: [
-                    "La verdad fué un viaje muy intenso pero emocionante, trabajar en mi propio proyecto es algo que no tiene precio.",
-                    "pasé por todo el proceso de idear lo qué quiero mostrar, cómo lo quiero mostrar, qué quiero transmitir, explicar de la mejor manera ¿quién soy? y darle mi toque curioso y creativo al asunto, lo cual me llevó a aprender bastantes cosas."
+                    "Fue un desarrollo de un mes muy caótico, ya que tuve algunos problemas para asimilar los nuevos conocimientos adquiridos en socketIO. No obstante, fue un desafío el cual pude pasar con mucha eficacia al mismo tiempo que aprendía a trabajar con nuevas tecnologías.",
+                    "Fué de mucha facilidad y muy eficiente aplicar JWT para la autenticación y autorización de sesiones. Dicha autenticación deja un Token el cual es guardado en el almacenamiento local del navegador, para que no se pierda la sesión cuando el usuario cierre la pestaña y vuelva a entrar.",
                 ]
             },
             {
                 title: "¿Qué aprendí?",
                 content: [
-                    "Aprendí el manejo de la librería framer-motion para animaciones de componentes, además de solucionar problemas que me iban sucediendo a lo largo del desarrollo, como el cambio de color del menú, las transiciones, el carrousel de imágenes de cáda proyecto, etc.",
+                    "Asimilé el manejo de VueJS para armar las interfaces de usuario con la option API. Aprendí a guardar manejar la autenticación y autorización de sesiones con JWT. Para sumar más habilidades, apliqué mis conocimientos adquiridos en Socket.io para los chats a tiempo real",
                 ]
             },
         ]
