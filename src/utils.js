@@ -16,6 +16,7 @@ import postgressSrc from "./assets/icons/backSkills/postgress.png"
 import sequelizeSrc from "./assets/icons/backSkills/sequelize.png"
 import mongoSrc from "./assets/icons/backSkills/mongoDB.png"
 import socketio from "./assets/icons/backSkills/socketio.png"
+import jwtSrc from "./assets/icons/backSkills/jwt.png"
 
 import gitSrc from "./assets/icons/agileSkills/git.png"
 import devopsSrc from "./assets/icons/agileSkills/devops.png"
@@ -133,6 +134,11 @@ const techIcons = {
         {
             title: "Socket.io",
             src: socketio
+        },
+
+        {
+            title: "jwt",
+            src: jwtSrc
         }
     ],
 
@@ -504,7 +510,8 @@ const projects = [
                 cssSrc,
                 nodeSrc,
                 expressSrc,
-                mongoSrc
+                mongoSrc,
+                jwtSrc
             ],
 
             fullList: [
