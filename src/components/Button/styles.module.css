@@ -80,3 +80,23 @@
     transform: scale(.9);
     transition: transform .2s;
 }
+
+/* extra large monitors */
+@media (min-width: 1400px) and (max-width: 1920px){
+    .button{
+        
+        /* width: 170px;
+        height: 35px; */
+        width: 255px;
+        height: 52px;
+        border-radius: 20px;
+    
+        font-weight: 500;
+        
+        font-size: 27px;
+        line-height: 28px;
+        font-family: 'Inter', sans-serif;
+        position: relative;
+        
+    }
+}

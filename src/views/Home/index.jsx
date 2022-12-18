@@ -17,10 +17,6 @@ const Home = () => {
     const [showModal, setShowModal] = useState(false)
     const {controls} = useContext(MyContext)
 
-    useEffect(() => {
-        // controls.start("visible")
-    },[])
-
     return (
         <motion.main className={s.containerFlex} variants={backgroundVariants} custom={"toLight"} animate={controls}>
             <div className={s.container}>

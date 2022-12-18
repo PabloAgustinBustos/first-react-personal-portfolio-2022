@@ -114,7 +114,7 @@ const nameVariants = {
 
 const profesionVariants = {
     hidden: {
-        x: "55vw",
+        x: "80vw",
 
         transition: {
             duration: .5,
@@ -136,7 +136,7 @@ const profesionVariants = {
 
 const descriptionVariants = {
     hidden: {
-        y: "55vh",
+        y: "100vh",
 
         transition: {
             duration: .5,
@@ -158,7 +158,7 @@ const descriptionVariants = {
 
 const buttonVariants = {
     hidden: {
-        x: "55vw",
+        x: "80vw",
 
         transition: {
             duration: .5,
