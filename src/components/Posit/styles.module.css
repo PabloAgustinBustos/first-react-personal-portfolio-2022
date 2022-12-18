@@ -38,7 +38,17 @@
 }
 
 .techIcons::-webkit-scrollbar{
-    display: none;
+    width: 2px;
+}
+
+.techIcons::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.techIcons::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 50px;
+    
 }
 
 .fade{
@@ -65,3 +75,25 @@
     width: 60px;
 }
 
+/* extra large monitors */
+@media (min-width: 1400px) and (max-width: 1920px){
+    .positContainer{
+        transform: scale(1.2);
+    }
+
+    .techIcons{
+        gap: 20px;
+    }
+
+    .icon{
+        width: 62px;
+    }
+
+    .fade{
+        width: 230px;
+        height: 45px;
+        position: absolute;
+    
+        bottom: 0;
+    }
+}

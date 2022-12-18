@@ -87,13 +87,13 @@
         
         /* width: 170px;
         height: 35px; */
-        width: 255px;
-        height: 52px;
-        border-radius: 20px;
+        width: 204px;
+        height: 42px;
+        border-radius: 12px;
     
         font-weight: 500;
         
-        font-size: 27px;
+        font-size: 21px;
         line-height: 28px;
         font-family: 'Inter', sans-serif;
         position: relative;
