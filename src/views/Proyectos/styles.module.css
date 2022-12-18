@@ -94,3 +94,13 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
+
+/* extra large monitors */
+@media (min-width: 1400px) and (max-width: 1920px){
+    .cards{
+        /* width: 100%; */
+        height: 90%;
+        column-gap: 150px;
+        /* background-color: brown; */
+    }
+}

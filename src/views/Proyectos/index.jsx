@@ -20,7 +20,6 @@ const Proyectos = () => {
 
     return (
         <motion.main variants={backgroundVariants} custom={"toLight"} animate={controls} className={s.container}>
-            
             <motion.section variants={titleVariants} initial="hidden" animate={controls} className={s.title}>
                 <h1 className={s.texto}>Vengo trabajando con un total de <span className={s.fast}>{stats.projects} PROYECTOS</span> <span className={s.hide}>{stats.projects} PROYECTOS</span></h1>
             </motion.section>
