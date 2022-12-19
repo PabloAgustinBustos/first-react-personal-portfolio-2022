@@ -18,7 +18,7 @@ const Posit = ({tech}) => {
 
                 </section>
                 
-                <div className={`${s.fade} ${ techIcons[tech].length > 6 ? s["fade_"+tech] : null}`}></div>
+                {/* <div className={`${s.fade} ${ techIcons[tech].length > 6 ? s["fade_"+tech] : null}`}></div> */}
             </div>
         </div>
     )

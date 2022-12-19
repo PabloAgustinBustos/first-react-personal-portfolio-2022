@@ -45,3 +45,14 @@
 
     /* background-color: cadetblue; */
 }
+
+@media (min-width: 1400px) and (max-width: 1920px){
+    .modal{
+        width: calc(904px * 1.3);
+        height: calc(508px * 1.3);
+    }
+
+    .text{
+        font-size: 25px;
+    }
+}

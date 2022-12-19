@@ -110,9 +110,9 @@ const Home = () => {
                         animate={controls}
                         transition={descriptionVariants.transition}
                     >
-                        <p className={s.description}>Soy programador muy apasionado por la tecnología.</p>
-                        <p className={s.description}>Me considero autodidacta y versatil. Me gusta adquirir nuevas herramientas a medida que voy trabajando y ganando experiencia, ya sea solo o en conjunto con un equipo.</p>
-                        <p className={s.description}>Mi objetivo es crecer personal y profesionalmente afrontando nuevos desafios en mi vida.</p>
+                        <p className={s.description}>Soy desarrollador de software muy apasionado por la tecnología y los lenguajes de programación.</p>
+                        <p className={s.description}>Me gusta adquirir nuevas herramientas del mundo de la informática a medida que voy trabajando y ganando experiencia, ya sea solo o en conjunto con un equipo.</p>
+                        <p className={s.description}>Mi objetivo es cambiar el mundo desde mi lugar como desarrollador, instalar nuevas ideas, aportar creatividad y productividad en los proyectos para lograr resultados eficientes y eficaces.</p>
                     </motion.div>
 
                     <Button controls={controls} variants={buttonVariants} onClick={() => setShowModal(true)} text="Ver trayectoria" form="bgDark"/>

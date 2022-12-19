@@ -84,7 +84,7 @@
 }
 
 .paragraph{
-    margin: 40px 0;
+    margin: 40px 20px;
     /* background-color: aqua; */
 }
 
@@ -93,6 +93,7 @@
     font-family: "Inter", sans-serif;
     font-size: 60px;
     font-weight: bold;
+    
 }
 
 .text{
@@ -126,4 +127,14 @@
 
 .project::-webkit-scrollbar-track {
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 1400px) and (max-width: 1920px){
+    .text{
+        font-size: 30px;
+    }
+
+    .description_title{
+        font-size: 70px;
+    }
 }

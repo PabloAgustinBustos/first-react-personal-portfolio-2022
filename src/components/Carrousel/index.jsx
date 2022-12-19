@@ -36,6 +36,7 @@ const Carrousel = ({images}) => {
                 <div className={s.circles}>
                     {images.map((i, id) => (
                         <div
+                            key={i}
                             className={`${s.circle} ${id==current ? s.selected : null}`}
                             onClick={() => setCurrent(id)}
                         ></div>

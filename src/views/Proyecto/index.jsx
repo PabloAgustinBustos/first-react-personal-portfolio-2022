@@ -67,13 +67,12 @@ const Proyecto = () => {
                     animate={controls}
                 >
                     {project.description.map((des, i) => {
-
                         const {title, content} = des
-                        
+
                         return(<article key={title} className={s.paragraph}>
                             <h1 className={`${s.description_title} ${s[colors[i]]}`}>{title}</h1>
 
-                            {content.map(text => (<p className={s.text}>{text}</p>))}
+                            {content.map(text => (<p key={text} className={s.text}>{text}</p>))}
                         </article>)
                     })}
                 </motion.section>
