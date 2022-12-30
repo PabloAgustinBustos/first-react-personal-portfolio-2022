@@ -665,7 +665,7 @@ const journy = {
     futuro: [
         "Quedarme en un solo lugar durante años y años no es algo que está en mis planes.",
         "Por esta razón iré cambiando de rama cada ciertos años, ya que me interesa también otros ambientes, como el desarrollo de apps mobiles, desarrollo de videojuegos y las Ciencias de datos.",
-        "En 10 años me veo habiendo ganado mucha experiencia para liderar proyectos que soluciones problemáticas, no solo comunes de la vida cotidiana, sino que ataquen a emergencias globales",
+        "En 10 años me veo habiendo ganado mucha experiencia para liderar proyectos que soluciones problemáticas, no solo comunes de la vida cotidiana, sino que ataquen a emergencias globales.",
         "También sueño con tener mi propia empresa de videojuegos donde brindaré a los talentos de todo el mundo la oportunidad de cambiar el mundo para bien, desde su profesión."
     ],
 }

@@ -2,7 +2,6 @@
     width: 610px;
     height: 423px;
     
-    /* background-color: rgb(99, 99, 99); */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -11,7 +10,7 @@
 .topContainer{
     width: inherit;
     height: 90%;
-    background-color: black;
+    /* background-color: black; */
     box-sizing: border-box;
     border-radius: 20px;
 }
@@ -50,4 +49,34 @@
 
 .selected{
     background-color: white;
+}
+
+/* tiny monitor */
+@media (min-width: 1024px) and (max-width: 1360px){
+    .container{
+        width: 650px;
+        height: 300px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .topContainer{
+        width: 500px;
+        height: 90%;
+        background-color: black;
+        box-sizing: border-box;
+        border-radius: 20px;
+    }
+    
+    .img{
+        /* width: 100%;
+        max-height: 100%; */
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: inherit;
+    }
 }

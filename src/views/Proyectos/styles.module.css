@@ -95,6 +95,19 @@
     grid-template-rows: repeat(2, 1fr);
 }
 
+/* tiny monitor */
+@media (min-width: 1024px) and (max-width: 1360px){    
+    .container{
+        height: 92vh;
+        /* background-color: rgb(0, 9, 23); */
+        
+        color: #4B89DC;
+    
+        display: grid;
+        grid-template-rows: 1.5fr 6fr;
+    }
+}
+
 /* extra large monitors */
 @media (min-width: 1400px) and (max-width: 1920px){
     .cards{

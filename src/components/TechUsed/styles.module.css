@@ -14,7 +14,6 @@
 
 .tagContainer{
     width: 100%;
-    /* background-color: rgb(9, 44, 101); */
     position: absolute;
     top: -18px;
     text-align: center;
@@ -37,4 +36,16 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+}
+
+/* tiny monitor */
+@media (min-width: 1024px) and (max-width: 1360px){
+    .skills{
+        width: calc(580px - 20%);
+        height: calc(300px - 20%);
+    }
+
+    .icons{
+        width: 95%;
+    }
 }

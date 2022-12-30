@@ -122,11 +122,66 @@
 }
 
 .description{
-    font-weight: 700;
-    font-size: 23px;
+    font-weight: 300;
+    font-size: 15px;
     line-height: 28px;
 
     color: #FFFFFF;
+}
+
+/* tiny monitor */
+@media (min-width: 1024px) and (max-width: 1360px){
+    .container{
+        width: 93%;
+        height: 85%;
+        gap: 5px;
+        grid-template-columns: 1fr 1.5fr;
+    }
+    
+    .left{
+        width: 95%;
+        height: 95%;
+        /* background-color: blanchedalmond; */
+    }
+    
+    .image{
+        /* background-color: brown; */
+        width: 300px;
+    }
+
+    .right{
+        height: 95%;
+        /* background-color: cadetblue; */
+    }
+
+    .icon{
+        width: 80px;
+        /* background-color: chocolate; */
+    }
+
+    .stat{
+        font-size: 25px;
+        /* background-color: blue; */
+    }
+
+    .name{
+        font-size: 80px;
+    }
+
+    .profesion{
+        font-size: 25px;
+    }
+
+    .descriptionContainer{
+        height: 300px;
+        /* background-color: antiquewhite; */
+    }
+
+    .description{
+        font-size: 15px;
+        line-height: 40px;
+        font-weight: 300;
+    }
 }
 
 /* extra large monitors */
@@ -135,14 +190,12 @@
         width: 93%;
         height: 85%;
         gap: 20px;
-        /* background-color: aquamarine; */
         grid-template-columns: 1fr 1.5fr;
     }
 
     .left{
         width: 95%;
         height: 95%;
-        /* background-color: #6FA4EA; */
     }
 
     .image{
@@ -152,29 +205,18 @@
 
     .right{
         height: 95%;
-        /* background-color: blueviolet; */
     }
 
     .icon{
         width: 110px;
-        /* background-color: #8A8A8A; */
-    }
-
-    .marco{
-        /* background-color: brown; */
-    }
-
-    .stats{
-        /* background-color: rgba(100, 148, 237, 0.764); */
     }
 
     .stat{
-        /* background-color: blue; */
         font-size: 40px;
     }
 
     .name{
-        font-size: 150px;
+        font-size: 100px;
         
     }
 
@@ -185,7 +227,6 @@
 
     .descriptionContainer{
         height: 400px;
-        /* background-color: #6FA4EA; */
     }
 
     .description{

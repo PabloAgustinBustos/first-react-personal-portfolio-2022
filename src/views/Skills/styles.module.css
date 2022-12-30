@@ -56,14 +56,33 @@
     align-items: center;
 }
 
+/* tiny monitor */
+@media (min-width: 1024px) and (max-width: 1360px){
+    .frontSection{
+        /* width: 95%;
+        height: 400px; */
+        /* background-color: blue; */
+    }
+
+    .info{
+        /* height: 300px;
+        width: 100%; */
+        /* background-color: brown; */
+    }
+
+    .text{
+        /* font-size: 50px; */
+    }
+
+    .fast, .hide{
+        /* font-size: 50px; */
+    }
+}
+
 @media (min-width: 1400px) and (max-width: 1920px){
     .frontSection{
         width: 95%;
         height: 400px;
-        /* background-color: blue; */
-    }
-
-    .softSection{
         /* background-color: blue; */
     }
 

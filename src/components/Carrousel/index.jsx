@@ -2,9 +2,6 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import s from "./styles.module.css"
 
-import left from "../../assets/icons/arrow-left.png"
-import right from "../../assets/icons/arrow-right.png"
-
 const Carrousel = ({images}) => {
     const [current, setCurrent] = useState(0)
 
@@ -15,16 +12,6 @@ const Carrousel = ({images}) => {
             setCurrent(images.length-1)
         }
     }, [current])
-    
-    const handleClick = e => {
-        const {id} = e.target
-        
-        if(id === "next"){
-            setCurrent(prev => prev+1)
-        }else{
-            setCurrent(prev => prev-1)
-        }
-    }
 
     return (
         <div className={s.container}>

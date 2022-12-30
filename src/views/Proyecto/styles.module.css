@@ -23,7 +23,6 @@
 
 .left{
     width: 50%;
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,6 +31,8 @@
 .right{
     width: 50%;
     
+    /* background-color: aquamarine; */
+
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -46,7 +47,6 @@
 }
 
 .leftSection{
-    
     display: flex;
     align-items: flex-end;
 }
@@ -77,10 +77,6 @@
 
 .smallIcon{
     width: 80px;
-}
-
-.bot{
-    
 }
 
 .paragraph{
@@ -127,6 +123,29 @@
 
 .project::-webkit-scrollbar-track {
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* tiny monitor */
+@media (min-width: 1024px) and (max-width: 1360px){
+    .version{
+        font-size: 15px;
+    }
+
+    .small{
+        font-size: 20px;
+    }
+    
+    .normal{
+        font-size: 50px;
+    }
+
+    .normalIcon{
+        width: calc(110px - 20px);
+    }
+    
+    .smallIcon{
+        width: calc(80px - 20px);
+    }
 }
 
 @media (min-width: 1400px) and (max-width: 1920px){

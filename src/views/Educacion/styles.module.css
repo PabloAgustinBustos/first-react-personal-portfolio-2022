@@ -93,6 +93,47 @@
     font-weight: 200;
 }
 
+/* tiny monitor */
+@media (min-width: 1024px) and (max-width: 1360px){    
+    .texto{
+        font-size: 60px;
+    }
+
+    .content{
+        width: 200px;
+        height: 200px;
+    }
+
+    .totalCertificates{
+        width: 205px;
+        height: 205px;
+        border-radius: 50%;
+    }
+
+    .list{
+        width: 50%;
+        height: 400px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .number{
+        font-size: 50px;
+    }
+    
+    .concept{
+        font-size: 50px;
+        font-weight: 200;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .item{
+        font-size: 20px;
+    }
+}
+
 /* extra large monitors */
 @media (min-width: 1400px) and (max-width: 1920px){
     .texto{
