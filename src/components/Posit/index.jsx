@@ -15,10 +15,7 @@ const Posit = ({tech}) => {
                 
                 <section className={s.techIcons}>
                     {techIcons[tech].map(({title, src}) => <img title={title} className={s.icon} key={src} src={src}/>)}
-
                 </section>
-                
-                {/* <div className={`${s.fade} ${ techIcons[tech].length > 6 ? s["fade_"+tech] : null}`}></div> */}
             </div>
         </div>
     )

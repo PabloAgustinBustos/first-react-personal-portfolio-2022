@@ -22,16 +22,12 @@ const Nav = () => {
     }, [])
 
     useEffect(() => {
-        
         if(pathname === "/home" || pathname.startsWith("/proyectos")){
-            console.log("uno porque page es", pathname)
             setStyle({
                 nav: "navLight",
                 link: "linkDark",
-                
             })       
         }else{
-            console.log("dos porque page es", pathname)
             setStyle({
                 nav: "navDark",
                 link: "linkLight",
@@ -73,10 +69,6 @@ const Nav = () => {
 
             e.target.style="text-decoration: none"
         }, 300)
-        
-        // 200 para /home
-        // 300 para /proyectos
-        // 600 para /educacion
     }
 
     if(pathname !== "/"){

@@ -13,8 +13,6 @@
     color: #4B89DC;
 
     display: grid;
-    gap: 100px;
-    grid-template-columns: 1fr 2fr;
 }
 
 .left{
@@ -129,6 +127,100 @@
     color: #FFFFFF;
 }
 
+/* phone */
+@media (min-width: 360px) and (max-width: 767px){
+    .containerFlex{
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        /* background-color: chocolate; */
+        background-color: #000917;
+    }
+
+    .container{
+        width: 95%;
+        height: 98%;
+        /* background-color: antiquewhite; */
+        /* color: #4B89DC; */
+
+        display: grid;
+
+        grid-template-rows: .2fr 2fr;
+        gap: 0;
+    }
+
+    .left{
+        width: 100%;
+        height: auto;
+        /* background-color: beige; */
+    }
+
+    .right{
+        width: 100%;
+        height: 280px;
+        /* background-color: cadetblue; */
+        
+        align-items: center;
+    }
+
+    .image{
+        width: 89px;
+        border-width: 2px;
+    }
+
+    .me{
+        height: 100px;
+
+        display: flex;
+        flex-direction: column;
+
+        /* background-color: aqua; */
+    }
+
+    .name{
+        height: 60px;
+        /* background-color: antiquewhite; */
+        font-size: 30px;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .profesion{
+        /* background-color: chocolate; */
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .icon{
+        width: 38px;
+    }
+
+    .stat{
+        font-size: 15px;
+    }
+
+    .marco{   
+        height: 60px;
+    }
+
+    .descriptionContainer{
+        /* background-color: antiquewhite; */
+    }
+
+    .description{
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 28px;
+    }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1023px){
+
+}
+
 /* tiny monitor */
 @media (min-width: 1024px) and (max-width: 1360px){
     .container{
@@ -181,6 +273,13 @@
         font-size: 15px;
         line-height: 40px;
         font-weight: 300;
+    }
+}
+
+@media (min-width: 1361px) and (max-width: 1399px) {
+    .container{
+        gap: 100px;
+        grid-template-columns: 1fr 2fr;
     }
 }
 

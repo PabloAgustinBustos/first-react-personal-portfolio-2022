@@ -2,11 +2,9 @@ import React from 'react'
 import {motion} from "framer-motion"
 import s from "./styles.module.css"
 import { projectVariants } from '../../views/Proyectos/animations'
-import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { useContext } from 'react'
 
-const ProjectCard = ({id, actualId, onClick, controls, name, tech, thumbnail}) => {
+const ProjectCard = ({id, controls, name, tech, thumbnail}) => {
     const navigate = useNavigate()
 
     const handleClick = e => {

@@ -36,3 +36,19 @@
 .linkLight, .linkLight:visited{
     color: #4B89DC;
 }
+
+/* phone */
+@media (min-width: 360px) and (max-width: 767px){
+    .link{
+        font-size: 15px;
+    }
+
+    .nav{
+        
+    }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1023px){
+
+}

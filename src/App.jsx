@@ -16,12 +16,14 @@ function App() {
     window.location.href = "/home";
   }
 
+  let onMobile = (window.screen.width > 360) && (window.screen.width < 767)
+
   return (
     <div className="App">
       <BrowserRouter>
         <GlobalStates>
           <Nav/>
-
+          
           <Routes>
             <Route path='/home' element={<Home/>}/>
             <Route path='/skills' element={<Skills/>}/>
@@ -29,6 +31,8 @@ function App() {
             <Route path='/proyectos/:id' element={<Proyecto/>}/>
             <Route path='/educacion' element={<Educacion/>}/>
           </Routes>
+
+          {/* {onMobile && <Nav/>} */}
         </GlobalStates>
       </BrowserRouter>
     </div>

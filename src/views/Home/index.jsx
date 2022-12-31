@@ -17,6 +17,10 @@ const Home = () => {
     const [showModal, setShowModal] = useState(false)
     const {controls} = useContext(MyContext)
 
+    console.log(window.screen.width , "x", window.screen.height)
+
+    let onMobile = (window.screen.width > 360) && (window.screen.width < 767)
+
     return (
         <motion.main className={s.containerFlex} variants={backgroundVariants} custom={"toLight"} animate={controls}>
             <div className={s.container}>
@@ -30,6 +34,26 @@ const Home = () => {
                         animate={controls}
                         transition={imageVariants.transition}
                     />
+
+                    {onMobile && (<div className={s.me}>
+                        <motion.h1 
+                            className={s.name} 
+                            variants={nameVariants} 
+                            initial="hidden" 
+                            // animate="visible" 
+                            animate={controls}
+                            transition={nameVariants.transition}
+                        >Pablo Bustos</motion.h1>
+
+                        <motion.div 
+                            className={s.profesion} 
+                            variants={profesionVariants} 
+                            initial="hidden" 
+                            // animate="visible" 
+                            animate={controls}
+                            transition={profesionVariants.transition}
+                        >Desarrollador full-stack</motion.div>
+                    </div>)}
 
                     <div className={s.marco}>
                         <motion.section 
@@ -82,7 +106,7 @@ const Home = () => {
                 </motion.section>
 
                 <motion.section className={s.right} variants={sectionVariants} animate={controls}>
-                    <div className={s.me}>
+                    {!onMobile && (<div className={s.me}>
                         <motion.h1 
                             className={s.name} 
                             variants={nameVariants} 
@@ -100,7 +124,8 @@ const Home = () => {
                             animate={controls}
                             transition={profesionVariants.transition}
                         >Desarrollador full-stack</motion.div>
-                    </div>
+                    </div>)}
+                    
 
                     <motion.div 
                         className={s.descriptionContainer}

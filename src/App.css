@@ -1,0 +1,18 @@
+.App{
+  display: flex;
+  flex-direction: column;
+}
+
+/* phone */
+@media (min-width: 360px) and (max-width: 767px){
+  .App{
+    flex-direction: column-reverse;
+  } 
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1023px){
+  .App{
+    flex-direction: column-reverse;
+  } 
+}
